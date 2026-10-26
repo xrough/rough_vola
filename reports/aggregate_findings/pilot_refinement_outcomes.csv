@@ -1,0 +1,10 @@
+date,model,baseline_numerical_stable,baseline_optimizer_success,baseline_ready,terminal_refinement_stable,model_ranking_accepted,original_fit_ready_unchanged,original_execution_status,display_status,pricing_evaluations_attempted,pricing_evaluations_completed,timed_out,timeout_price_array_accepted,train_dollar_rmse,heldout_dollar_rmse,train_spread_rmse,heldout_spread_rmse,evidence_role
+2025-08-07,heston,False,True,False,True,False,False,complete,complete,10,10,False,False,0.3640774052920374,0.36509090014275,13.199482670377137,16.62786238575854,archived_aggregate_not_recomputed
+2025-08-07,rough_controlled,False,True,False,True,False,False,complete,complete,10,10,False,False,0.1079077818496596,0.11223177116612801,8.089864360357701,9.344213715337771,archived_aggregate_not_recomputed
+2025-08-07,rough_full,False,True,False,True,False,False,complete,complete,10,10,False,False,0.0888547934012669,0.09098914441914582,5.824887855885661,5.241784449391624,archived_aggregate_not_recomputed
+2025-08-08,heston,False,True,False,True,False,False,complete,complete,10,10,False,False,0.26539689756124324,0.26128092930760705,9.59594164620259,10.997292076432313,archived_aggregate_not_recomputed
+2025-08-08,rough_controlled,False,True,False,True,False,False,complete,complete,10,10,False,False,0.09943156590501076,0.09960091082636145,5.7803822154193965,5.0127209615042085,archived_aggregate_not_recomputed
+2025-08-08,rough_full,False,True,False,False,False,False,completed_with_failures,partial_timeout,10,9,True,False,,,,,archived_aggregate_not_recomputed
+2025-08-11,heston,False,True,False,False,False,False,deadline,unstarted_deadline,0,0,False,False,,,,,archived_aggregate_not_recomputed
+2025-08-11,rough_controlled,False,True,False,False,False,False,deadline,unstarted_deadline,0,0,False,False,,,,,archived_aggregate_not_recomputed
+2025-08-11,rough_full,False,True,False,False,False,False,deadline,unstarted_deadline,0,0,False,False,,,,,archived_aggregate_not_recomputed

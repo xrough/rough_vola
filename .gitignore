@@ -1,0 +1,38 @@
+# Local environments, credentials and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.DS_Store
+.env
+.env.*
+!.env.example
+credentials.json
+*.pem
+*.key
+.ipynb_checkpoints/
+.virtual_documents/
+.idea/
+.vscode/
+
+# Acquired data and regenerated experiments; curated reports are versioned.
+/data/
+/output/
+/outputs/
+/artifacts/
+/lab/
+/notebooks/_output/
+/notebooks/legacy/
+/reports/generated/
+/private/
+*.bundle
+
+# Distribution products
+/build/
+/dist/

@@ -1,0 +1,63 @@
+name: Python research tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  numerical-core:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.11", "3.12"]
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      VECLIB_MAXIMUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - run: python -m pip install -e ".[dev]"
+      - name: Confirm installed namespaces
+        run: python -c "import rvlab.pricing, roughvol; print(rvlab.pricing.__file__); print(roughvol.__file__)"
+      - name: Numerical pricing and calibration tests with minimal dependencies
+        run: >-
+          python -m pytest -q
+          src/rvlab/tests/test_pricing.py
+          src/rvlab/tests/test_pricing_calibration.py
+          src/rvlab/tests/test_pricing_diagnostics.py
+          src/rvlab/tests/test_pricing_optimizer.py
+          src/rvlab/tests/test_pricing_variance_curve.py
+          src/rvlab/tests/test_pricing_curve_calibration.py
+          src/rvlab/tests/test_pricing_refined_calibration.py
+          src/rvlab/tests/test_american_calls.py
+          tests/test_public_packaging.py
+      - run: python examples/pricing_calibration.py --model bs
+
+  public-research-suite:
+    runs-on: ubuntu-latest
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      VECLIB_MAXIMUM_THREADS: "1"
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - run: python -m pip install -e ".[dev,notebooks,market-data,research]"
+      - name: Public source and fixture-based regression suite
+        run: python -m pytest -q
+      - name: Execute three public notebooks in fresh kernels
+        run: python scripts/run_notebooks.py --all --output-dir /tmp/rough-vola-notebooks
+      - name: Build wheel and source distribution
+        run: python -m build

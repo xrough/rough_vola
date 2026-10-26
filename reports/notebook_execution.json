@@ -1,0 +1,28 @@
+{
+  "version": "public_notebooks_v1",
+  "records": [
+    {
+      "notebook": "01_pricing_and_exercise.ipynb",
+      "elapsed_seconds": 34.377,
+      "error_outputs": 0,
+      "source_bindings_pass": true,
+      "kernel_pinned_to_selected_interpreter": true
+    },
+    {
+      "notebook": "02_synthetic_calibration.ipynb",
+      "elapsed_seconds": 24.187,
+      "error_outputs": 0,
+      "source_bindings_pass": true,
+      "kernel_pinned_to_selected_interpreter": true
+    },
+    {
+      "notebook": "03_spy_pilot.ipynb",
+      "elapsed_seconds": 17.369,
+      "error_outputs": 0,
+      "source_bindings_pass": true,
+      "kernel_pinned_to_selected_interpreter": true
+    }
+  ],
+  "private_data_included": false,
+  "historical_campaigns_recomputed": false
+}

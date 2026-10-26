@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the repository and identify the numerical settings and version used in your research."
+title: "rough_vola: stochastic and rough volatility research"
+type: software
+authors:
+  - name: "rough_vola contributors"
+version: 0.1.0
+date-released: 2026-10-26
+repository-code: "https://github.com/xrough/rough_vola"
+license: MIT

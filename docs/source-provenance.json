@@ -1,0 +1,2558 @@
+{
+  "edition": "public-research-consolidation",
+  "date": "2026-10-26",
+  "sources": [
+    {
+      "repository": "xrough/effective_engine",
+      "local_head": "0b175210c4c083b802366143c461fa773884231a",
+      "note": "Includes uncommitted Python research; source files are fingerprinted individually."
+    },
+    {
+      "repository": "xrough/roughVol",
+      "local_head": "b4fbaf901fb8e412659d782c03cfece0dfb6c0ef",
+      "note": "Selected imports documented in docs/roughvol-import.md; no runtime sibling dependency."
+    }
+  ],
+  "current_research_original_files": [
+    {
+      "path": "src/rvlab/__init__.py",
+      "original_sha256": "796ea8781c35364f1bda251cb0173c23a970a13130d9273c88024d9d20ed0e5f",
+      "original_bytes": 6430
+    },
+    {
+      "path": "src/rvlab/compat.py",
+      "original_sha256": "99e1015954aaeaa891cf941414e90dbe1a0a2a895e10aaa11e2ab6605607399f",
+      "original_bytes": 4381
+    },
+    {
+      "path": "src/rvlab/competition.py",
+      "original_sha256": "a295f23ef87fb256c9e9b36ccc502e8631061518baf63e156d4f4ad59234730f",
+      "original_bytes": 120719
+    },
+    {
+      "path": "src/rvlab/config.py",
+      "original_sha256": "fc0488fa65b7ae7bbfb0547dc6395c62605ad78e2bf2b5d6cddb326b9ec74277",
+      "original_bytes": 5776
+    },
+    {
+      "path": "src/rvlab/data/__init__.py",
+      "original_sha256": "66e9c016a7c60a54d834657df0ba5dca9c957a4c751e5c29772f2f48e34d84cd",
+      "original_bytes": 1680
+    },
+    {
+      "path": "src/rvlab/data/catalog.py",
+      "original_sha256": "47acfada93c3995d11e6cf12fa94c4a439d96516b38115cd1a789b4d01001389",
+      "original_bytes": 16198
+    },
+    {
+      "path": "src/rvlab/data/contracts.py",
+      "original_sha256": "a47c683755b797d247f118a3cf3c89d882473d1a1448964c5450a0170cc39b50",
+      "original_bytes": 7182
+    },
+    {
+      "path": "src/rvlab/data/loaders.py",
+      "original_sha256": "875338ea4b25171fd49c6e0420d46038b0700550bd6f240465cf451ffaa57711",
+      "original_bytes": 8258
+    },
+    {
+      "path": "src/rvlab/data/panel.py",
+      "original_sha256": "cecf87e0cab22ae189b92cc5c20d16f5de42936bfa317b70256b19cf8ed0eb2f",
+      "original_bytes": 20061
+    },
+    {
+      "path": "src/rvlab/data/quality.py",
+      "original_sha256": "411b43e1846697b04602249a325d614e393ff31529b734ae6c062aeece37bb1e",
+      "original_bytes": 20990
+    },
+    {
+      "path": "src/rvlab/data/synthetic.py",
+      "original_sha256": "86addf8f93b5c6b00ce11f5f166dcf00534af15f8cde21363bece1bc60831660",
+      "original_bytes": 10245
+    },
+    {
+      "path": "src/rvlab/evaluate/.ipynb_checkpoints/backtest-checkpoint.py",
+      "original_sha256": "5bb32cc70c01d51ca5be2c7ecb4860955c0ff091ab01a05f8bfdbce566ab7a83",
+      "original_bytes": 7173
+    },
+    {
+      "path": "src/rvlab/evaluate/__init__.py",
+      "original_sha256": "322ffa8d4c6fef9b9e1baf3af18990722fd4bbf9cbbd3e5160f74463a4d31ce9",
+      "original_bytes": 1872
+    },
+    {
+      "path": "src/rvlab/evaluate/backtest.py",
+      "original_sha256": "5bb32cc70c01d51ca5be2c7ecb4860955c0ff091ab01a05f8bfdbce566ab7a83",
+      "original_bytes": 7173
+    },
+    {
+      "path": "src/rvlab/evaluate/classification.py",
+      "original_sha256": "51f21b420131b5401104331c5d29253bac4f45b4d77b04fb56d5ab51838f1522",
+      "original_bytes": 7769
+    },
+    {
+      "path": "src/rvlab/evaluate/importance.py",
+      "original_sha256": "51088109970fad03412982d0ab9db8f779084e46db50337e50b3a3c7032be328",
+      "original_bytes": 3927
+    },
+    {
+      "path": "src/rvlab/evaluate/metrics.py",
+      "original_sha256": "8fe3bfab998d582ba54b52a22a2fccb82200c6472d412fcc898d9d3b5b7ed2d5",
+      "original_bytes": 7571
+    },
+    {
+      "path": "src/rvlab/evaluate/ranking.py",
+      "original_sha256": "79d0988e3a881e441565dc015f7038eb8b9c537353f7d93e81add111d74f287c",
+      "original_bytes": 8553
+    },
+    {
+      "path": "src/rvlab/evaluate/sweeps.py",
+      "original_sha256": "5dab0eae1fc52b480bc906a9f79a469d7091297ff7f4009310e98089b01abe97",
+      "original_bytes": 4956
+    },
+    {
+      "path": "src/rvlab/evaluate/tests.py",
+      "original_sha256": "3cf09cbe5df6b0df93b2e19625281b896184e6e3b6a80736bfa256afe3304162",
+      "original_bytes": 7303
+    },
+    {
+      "path": "src/rvlab/experiments/.ipynb_checkpoints/_pricing_attribution-checkpoint.py",
+      "original_sha256": "2f51e9e9c17dc91ec8a16101401ee41cc4e3bfa3a2b9cb29198e9316fa3149c3",
+      "original_bytes": 18715
+    },
+    {
+      "path": "src/rvlab/experiments/__init__.py",
+      "original_sha256": "58c4fa1663c521f256b1ba07e2b881ded0aa380608ee3df34fee2b7221c7124e",
+      "original_bytes": 234
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_accuracy.py",
+      "original_sha256": "91f0244053de582cf9f0e5709637550db8b928d8de7de9636d8c7bb1990a8e34",
+      "original_bytes": 2018
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_american.py",
+      "original_sha256": "3122e0015bbb74beb2a976ecf55997b75df0862a8456b5d8eb4bba4f287aeb1f",
+      "original_bytes": 20143
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_american_identification.py",
+      "original_sha256": "7a497b58adcd0e7a7b9d8f337b71188ffb1117a2b8c61151af4173ec111bb6ba",
+      "original_bytes": 44753
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_american_synthetic.py",
+      "original_sha256": "e9e901fc2e869dec04b3f96b51af2dfbc518ce9484943a1d346a3440a92d0457",
+      "original_bytes": 19547
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_attribution.py",
+      "original_sha256": "92fb9d9611610a93d7682ab662e10d4cbe547811ba66dca532b0b3c24c6bb028",
+      "original_bytes": 4146
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_benchmarks.py",
+      "original_sha256": "897762a1f37de5d3bda5b08b851736bfa97d75be85c39abe10f2a1d641702e69",
+      "original_bytes": 22969
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_bounds.py",
+      "original_sha256": "365b25baf4c574ad69b704f87b16cdffb9808aa40a3fa1ed3e43be349f2eedb0",
+      "original_bytes": 12416
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_curve_convergence.py",
+      "original_sha256": "096f5a37ae847c1a37333da6b4546d04a253c27f5e40fd94e8adda63d3403acb",
+      "original_bytes": 10743
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_curve_diagnosis.py",
+      "original_sha256": "4d0f34368dea6b8d2ae8274a008ea981ae1bd0b0aefa3b059ff3ec514b8e9fad",
+      "original_bytes": 22227
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_curve_geometry.py",
+      "original_sha256": "d630536813663283789a1396fdd1dc6783de70331c39331280a999b4b8e205db",
+      "original_bytes": 11418
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_curve_kappa.py",
+      "original_sha256": "80670d7b540061b4d671ce1b330d6b0070e32eeba19e6d40c8788aae58130f46",
+      "original_bytes": 13414
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_data.py",
+      "original_sha256": "3fe54d5836584fa4d91ada8800c486dbd0f9d5596bc12da7785d5fead47215f2",
+      "original_bytes": 16650
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_exercise.py",
+      "original_sha256": "bf80954b4487b9f876ff5e7c0d8b57680068907d2200fc60038cd3075b2e2935",
+      "original_bytes": 17032
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_extended.py",
+      "original_sha256": "0d485e19f227bf66b063730d396d28579fc7945d93642cbfe013aad0b92d5942",
+      "original_bytes": 17487
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_first_stage.py",
+      "original_sha256": "c933a2c67ebf6eb045e3398322ca90212a3b6f21f0ca15b4c2c8be66daa6ccf9",
+      "original_bytes": 11213
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_first_stage_reporting.py",
+      "original_sha256": "e271aaa71647eff403f50f3012d1d2f1d522d0552e2db187407f3e9158130d8b",
+      "original_bytes": 20408
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_first_stage_reprice.py",
+      "original_sha256": "6d8bfb10b3798c8efb9c85a69071628060322dcc513eaccb25a095251d6b5f2c",
+      "original_bytes": 5259
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_fits.py",
+      "original_sha256": "ca979aab7015524233b9cdba2444108ca9515618e607497d759a999463079665",
+      "original_bytes": 21576
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_maturity_accuracy.py",
+      "original_sha256": "e322dbd83eab4010cba672e99c72b88bebec9e67315e841660cdbcb8463d5c58",
+      "original_bytes": 7381
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_maturity_geometry.py",
+      "original_sha256": "8193383be505c0c999d369975cf9b729e29dd23623dcf4041bb20063c2658ffa",
+      "original_bytes": 9127
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_maturity_study.py",
+      "original_sha256": "7246e3315cc26e43f0c248140ce82467c90d4b13560adeb74d129cf91e1f578e",
+      "original_bytes": 33603
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_policy_comparison_audit.py",
+      "original_sha256": "dbe55649290242d5f1423fe5002ef5070ffca6c3622ea7d57b12bd6a12aaf0da",
+      "original_bytes": 13722
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_policy_comparison_numeric.py",
+      "original_sha256": "0e457312fd89c8c59e96e3c5b575743cc3fceb0bcc708913e216552335e7e996",
+      "original_bytes": 35745
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_policy_comparison_report.py",
+      "original_sha256": "4b9e1f185b848f0103ac4e874bcb7be5c9a643251783407ce69bee40594d1ecf",
+      "original_bytes": 18528
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_policy_comparison_run.py",
+      "original_sha256": "862d0b86a7971c26f51e39d670cb1a9c9367a3c7acbf08f6b9e641786b6bd26f",
+      "original_bytes": 40565
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_policy_comparison_stats.py",
+      "original_sha256": "72dccc204aa6aabc71162871d1f4641e18fb96dace7bfe044a23cb9166bd804c",
+      "original_bytes": 12183
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_research.py",
+      "original_sha256": "b743c31a0ec51d5b57c4e52b5f01105a2aebd184c141c7989d2989d5470768ae",
+      "original_bytes": 95233
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_american.py",
+      "original_sha256": "d52cdb42effc78eb819985ee217140668a369d7404fc2542d492ed8fcb47dd94",
+      "original_bytes": 44185
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_american_accuracy.py",
+      "original_sha256": "504b9bafbef6c50d4f5a78a604b9c7d4ab4fddb5bf8b863d68a01bcb6e713105",
+      "original_bytes": 23827
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_american_accuracy_diagnostics.py",
+      "original_sha256": "fb473a51161e71b4e002110879132d1b23df65d582e5dac93daf07c7ad2a7701",
+      "original_bytes": 8358
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_audit.py",
+      "original_sha256": "addd1cb42dcc2790a47b4ffad4e590dbdd65ae1a40e8600d16a20d09ffc8578c",
+      "original_bytes": 10186
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_audit_collection.py",
+      "original_sha256": "81d384cfa5f088fc692bcfdb9e9b66c46e998694b2679bb7cd75111d8db212d9",
+      "original_bytes": 14138
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_collection.py",
+      "original_sha256": "1af5130539257ab99384221f21ffce0a7a783c3984aa84407acb3d147ce44a34",
+      "original_bytes": 21086
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_control.py",
+      "original_sha256": "309b62f569d90f86e2ab012f104a0e74bfc2047aee8df6507da8a40cda21f79f",
+      "original_bytes": 12499
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_control_aligned.py",
+      "original_sha256": "075d18869070b217b054d453dbbdddae98b52efd5803b6cba366ba84ff4c3c55",
+      "original_bytes": 8771
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_control_collection.py",
+      "original_sha256": "48a6c0a427f61f19831f07dc0752a8dea5bd54e5ae599d11553e5beac0c031d1",
+      "original_bytes": 22484
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_control_samples.py",
+      "original_sha256": "d1de033a503a0d61933cd37ff589420783614dd81a92655c98265cbf3d627f93",
+      "original_bytes": 6068
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_control_tables.py",
+      "original_sha256": "948e3dfaf12223bc40db46b60661c8ffc10db65840b42838f14add720a5aac3d",
+      "original_bytes": 4909
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_delta.py",
+      "original_sha256": "c43475f27ad19f9a126201714eab3dcd7fd5c833034e5e01a5fb8357c0f73d71",
+      "original_bytes": 11213
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_delta_collection.py",
+      "original_sha256": "ab534cda8fb64fe15ce609081d4d2489d01ebe4b80c96f452efd8446c4fa9e83",
+      "original_bytes": 12491
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_delta_history.py",
+      "original_sha256": "8104050f2279bb65c0039ffa8e3322d9af1a93e3f4609ffe5bf7bf39819f4044",
+      "original_bytes": 3150
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_delta_reporting.py",
+      "original_sha256": "52ecde2345eb7c2b3294b133d933ba4d7852ba97fb4da95234194a1fee0a931b",
+      "original_bytes": 12641
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_delta_samples.py",
+      "original_sha256": "dde26fa504a000ccbbf4af7ed55bde0e35c3cccca237881fd87083400e6d3d0f",
+      "original_bytes": 7376
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_delta_tables.py",
+      "original_sha256": "d660e27a50cc51a0abaaba4fd3b3a854f8369d78ae7dacab040e7e94a16f094d",
+      "original_bytes": 6253
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_history.py",
+      "original_sha256": "df881e1211ab925a262d8aacba843d4be861eebb67c5682fc446d7d1da0a735b",
+      "original_bytes": 3165
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_policy.py",
+      "original_sha256": "4544aa7e273577cc4ebd9a6cb9aee119b04ddf54fbd2231ffe3f3c62774a905d",
+      "original_bytes": 15365
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_reporting.py",
+      "original_sha256": "e7334ee0996007f25ea56963242b088d2e35c87cafdb5d20013b919d15c8c135",
+      "original_bytes": 9697
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_samples.py",
+      "original_sha256": "8671a5f60224587329bbe5ea97858c782a442318fecb5c83340893fd673a41c6",
+      "original_bytes": 5137
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_study.py",
+      "original_sha256": "f4d4d55b62557573332dc3ff45037538a929fa85e5ddd415c284083057713578",
+      "original_bytes": 818
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_bellman_tables.py",
+      "original_sha256": "4c5d90efdc98b869709fd92b752317066a8614d04c975d60f228d49de016b0bd",
+      "original_bytes": 8792
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_benchmark.py",
+      "original_sha256": "c0329df88cdb657e567981b7785b8d83bad99afdb1ee5155e705236acb0cf382",
+      "original_bytes": 16750
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_benchmark_audit.py",
+      "original_sha256": "081f06733f9b3b2289e2c3ebbaa5bbbdbeb87d1868a1c2b63f582b57e648e24b",
+      "original_bytes": 24185
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_benchmark_collection.py",
+      "original_sha256": "f156412c5a38f84885bcb6827fb4441f61fa2baf672ea92160a6e826acaf4711",
+      "original_bytes": 27204
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_benchmark_recovery_collection.py",
+      "original_sha256": "2cb7ce7adf762028d77499020979d51642c9e95c7e4caf5f39a2db2afe25f7e1",
+      "original_bytes": 17541
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_benchmark_serialization.py",
+      "original_sha256": "9ef74476237c332d75b6a9d56bd23ec2bed3ced05601f8242ba5998710c00485",
+      "original_bytes": 7051
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_centering_audit.py",
+      "original_sha256": "4b1125885468a5cb66bb9bf1fd856734ea043f76a03b5a88a0459ec6a690eb59",
+      "original_bytes": 14377
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_centering_precision.py",
+      "original_sha256": "9ef1839479beacaf4d1ded6c9ba263f320cbbac331147783bc734a5c8821f69d",
+      "original_bytes": 14935
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_centering_precision_paths.py",
+      "original_sha256": "13d357dd319339344e3c784a711b7bd15ebd396f4e0d90ad886c8c5804f43cef",
+      "original_bytes": 9798
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_centering_precision_quadrature.py",
+      "original_sha256": "2c51044eae1e5f6b0372b04d1de44df1afc6ca6ff846d3d2bca65c8acd83a2a1",
+      "original_bytes": 16656
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_centering_precision_reporting.py",
+      "original_sha256": "8b1c8f9cec1f4aa3db5b5b64baa195be81b09719f9fc6deaa013681e886af1a8",
+      "original_bytes": 11959
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_centering_precision_statistics.py",
+      "original_sha256": "bbafa4480969c4c6a15b175de79b90bd170d2fde0e680eac12150ee92ac51829",
+      "original_bytes": 9636
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_centering_reporting.py",
+      "original_sha256": "3e92c4b9f9cab2d322278a4f4dcdf647c2db038957dd940b75d064ca1f0e10fd",
+      "original_bytes": 12260
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_centering_statistics.py",
+      "original_sha256": "6232434c852d4e6e135bf344a5421e3bc33f18e7530d42fac9ad19f03f83266b",
+      "original_bytes": 9088
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_control_centering.py",
+      "original_sha256": "27bc406ad411ffb98e918a92e7834e4cdac3d222785aacd97a7ab4f0476a6592",
+      "original_bytes": 21156
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_dual_tightening.py",
+      "original_sha256": "7f78d9bacca5ec895c7319b0ca17524ce2c9645e4772546892e15b5e0613d287",
+      "original_bytes": 44310
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_exercise_block.py",
+      "original_sha256": "67f13636e7182a9d5799825f92db662cd3acaf6f26244252d6c58f991b64f9cf",
+      "original_bytes": 9826
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_foundation.py",
+      "original_sha256": "8dc3e775789d55ee89f0aa3ad9224edad0f79e6f529da1fa76759c52b31b2b90",
+      "original_bytes": 33877
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_frozen_policy.py",
+      "original_sha256": "e88e92ad0322a2e6045f0a7b6010f5c39ac6d3453f77db677136a3606da47bb2",
+      "original_bytes": 15806
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_gap_time_history.py",
+      "original_sha256": "9a4cea47d776076ad84360f087d732fc9595781af7cef13692aae3be01ac637b",
+      "original_bytes": 3200
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_gap_time_refinement.py",
+      "original_sha256": "22e2f948e9268cf7936fa9f4e24e0a622af2edccabf97d30367d9630d61bccad",
+      "original_bytes": 24579
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_gap_time_reporting.py",
+      "original_sha256": "7ff5b7de750f4b43a650a565da42a53a90a435e8d4af02d964ad7de58bac418a",
+      "original_bytes": 10472
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_gap_time_stopping.py",
+      "original_sha256": "05b3331a6d2e06e30d585394bd0887b718f95d9a7de319a08789ed2a4af9f8a7",
+      "original_bytes": 24235
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_large_policy.py",
+      "original_sha256": "76d4dac3ddb4d6a0aefec922eefa3c65b183d20b316b8e51111ace99f66ce164",
+      "original_bytes": 1839
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_local_control.py",
+      "original_sha256": "438eb3a3df9487ad9ed29c8b819ddd6acc3d7de9b8085fc87be5693a9916aa33",
+      "original_bytes": 13343
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_mc_precision.py",
+      "original_sha256": "2a1f087b47aebb38862677e867ccb584d72c3dc4b6d7f4f3a61c02b10b66f862",
+      "original_bytes": 33942
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_mc_precision_collection.py",
+      "original_sha256": "d938c5d0fc4a5ce8219f0698e787c5c129487e15d65ed29d27b6ca6fbf39ba25",
+      "original_bytes": 26229
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_mc_precision_history.py",
+      "original_sha256": "f4c7ca06c3cc857d14e0f854b9bc95ce9dddd68b44d62783d897c4a271ab6286",
+      "original_bytes": 3830
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_mc_precision_reporting.py",
+      "original_sha256": "411c86290513364d14e6edd1c937d11080d24aabd628b55498ab7900e0f2a122",
+      "original_bytes": 8952
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_mc_precision_samples.py",
+      "original_sha256": "8fa1b85add5a44ed927e3a70dbb318e6533b17e400ad34e0a7a660a03d6cc7c8",
+      "original_bytes": 20449
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_mc_precision_statistics.py",
+      "original_sha256": "8ac97700ff862f1ae56a62056ef55a59356212436cd113fbfd7645f38faeec56",
+      "original_bytes": 13144
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_new_policy_delta.py",
+      "original_sha256": "eaeeab25feb28fbc1978dfedbed40a12a87966652baad01529dc546d315dffea",
+      "original_bytes": 7394
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_node_refinement.py",
+      "original_sha256": "1016a3f65f1e98e1b457191c60304a48ca2b34ec5792868c384f4468873ec593",
+      "original_bytes": 10476
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_node_refinement_fast.py",
+      "original_sha256": "bee93c33b5f5350598890d2b4f76f2c56ef464decc2ac117b2cf3a8c747c8894",
+      "original_bytes": 10964
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_policy_improvement.py",
+      "original_sha256": "0c378fd2dac9ae4034daf9258befa480d2fc7a6f90cab64378733d33bf74690a",
+      "original_bytes": 34386
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_policy_reporting.py",
+      "original_sha256": "13d2956b7e2278bc4f997f5701ecacc4f8112e26a900db0830876c9744124dde",
+      "original_bytes": 14092
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_policy_validation.py",
+      "original_sha256": "8923f97e0f22c62ff2c38eb2b6e587c5be4800f8987f4fdd0b033b3aa42c9fbc",
+      "original_bytes": 22361
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_policy_validation_history.py",
+      "original_sha256": "175078fdb875d624cd36bdd8823b9a9ad6e6361f5d53fa792f3fba09befb1453",
+      "original_bytes": 2964
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_policy_validation_reporting.py",
+      "original_sha256": "d1d4a5b371cbb9588e2186e167e300fa81e95e0699320cc54dfd372086605865",
+      "original_bytes": 10364
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_policy_validation_stopping.py",
+      "original_sha256": "880c3d7e3762929df7819d75a44c2dd4daf54d2a5fa5973677199bb8abbde1a2",
+      "original_bytes": 15770
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_precision.py",
+      "original_sha256": "1e6fdc967861f36f34642f3ace3cd6d2baee043d727b32432b17f46edc675f0c",
+      "original_bytes": 44938
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_price_budget.py",
+      "original_sha256": "b9c34f883dabd79c0adb91b6add69346e9ee60bab088603395458f6879a14a02",
+      "original_bytes": 8342
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_price_budget_basis.py",
+      "original_sha256": "47223e89ac5fdc8228a4e19ec01fde397ec9c3cda2ea8560fa22bb13d6534c96",
+      "original_bytes": 4200
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_price_budget_collection.py",
+      "original_sha256": "a6e12589eff4877bcb64f47f44b6c84c80d27899bbb381723432208da1a246a7",
+      "original_bytes": 31925
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_price_budget_controls.py",
+      "original_sha256": "be2b53cf7e27c5ef7ded11942d81a1e9e20ef60c96064b40431f4a0955986fca",
+      "original_bytes": 4767
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_price_budget_gap_diagnostics.py",
+      "original_sha256": "5d5ecd4553eebb84e97f5104c4be80f0e862703ca2754a714e5abcb5fb90234b",
+      "original_bytes": 6452
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_price_budget_history.py",
+      "original_sha256": "dfa46d1585e575e8acc41d8ced58cd0c1797f65c5e1e533cac70d6e021bfbd6e",
+      "original_bytes": 3861
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_price_budget_reporting.py",
+      "original_sha256": "2f713a38b3d03e39d2de1bc64585d45c188f738bd7401e8d2d68bc6ad823f69e",
+      "original_bytes": 9638
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_price_budget_samples.py",
+      "original_sha256": "bf0342a416e657b060fc6bfe1d8616be846979746afe85e2be5d10592b3bdd66",
+      "original_bytes": 11445
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_price_budget_tables.py",
+      "original_sha256": "defe14c0eca3a30d6dabc5c6f6fc6ce994814b86e38a0dc45361ac7d39f93371",
+      "original_bytes": 6664
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_price_budget_trials.py",
+      "original_sha256": "cb126a5a3bd56d8b9e0da640381fa870e7b0b7b0f13854017d840ed6b7ddd1ce",
+      "original_bytes": 7152
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_shared_delta.py",
+      "original_sha256": "2f60567a355ab9c15aa660ca298c15548ee90c5b869bfcd5e0dc3a3ade1f7513",
+      "original_bytes": 31868
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_shared_delta_collection.py",
+      "original_sha256": "2828c498559c35916f65655f1a0b5a344f648131c259a2b15b7e3b72962bb5fa",
+      "original_bytes": 34378
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_shared_delta_history.py",
+      "original_sha256": "31c55fea076a86ff27ccd09c8f534696cfcc93777bc9372a7887ad636759314f",
+      "original_bytes": 4981
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_shared_delta_reporting.py",
+      "original_sha256": "f2a33d7f24fe0d28e7e38fbe1a93810758e868734f8ba0ff3e12333821fbedd2",
+      "original_bytes": 10899
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_shared_delta_samples.py",
+      "original_sha256": "417dd0d6807ee1c236e3b2067f5e9f485fd10f142abc54776d9fe8f69bed62ee",
+      "original_bytes": 26652
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_shared_delta_statistics.py",
+      "original_sha256": "c6790d151b3c44b236744e7813437ffe7bb5cfcc40b02242c3e12bf9e7b4e47e",
+      "original_bytes": 10842
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_state_replay.py",
+      "original_sha256": "4f4442cf3ce741064439e30aa41e58bd3897efc328f198c153180e61ce04219b",
+      "original_bytes": 6191
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_stock_delta.py",
+      "original_sha256": "6153168d258e3acc340cf8c88c39cbfecf6fa83b2c89c8d8074ad32cb66a3011",
+      "original_bytes": 14888
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_stopping_attribution.py",
+      "original_sha256": "1e7ed26388b184efadd81e083fb4a480131503cee1ef344c69d1fee52753e8d9",
+      "original_bytes": 51985
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_stopping_delta.py",
+      "original_sha256": "09d498c13f818d4f431b6b0f26720b11dfa0b5a306944262f6b75574d6997847",
+      "original_bytes": 24471
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_stopping_delta_history.py",
+      "original_sha256": "8ab985c53d6c2cbfa1aef42a295f35188cdf57403a3a1018ef44aad0238b3550",
+      "original_bytes": 2961
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_stopping_delta_reporting.py",
+      "original_sha256": "9dce6cc5a51d469802e8c15b0edeccc9aff977daa0e3ca2a0b902b0bea82eeb7",
+      "original_bytes": 6903
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_stopping_delta_validation.py",
+      "original_sha256": "50a61cad66cea4d6d9e463fec512ceeec164cb658af31e1221e7ed94aafe9e99",
+      "original_bytes": 6300
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_stopping_refresh.py",
+      "original_sha256": "ebe29659b8698c29075aee7ed1ca428523ea943b89552c2edbf76c3dda013e42",
+      "original_bytes": 13078
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_tail_attribution.py",
+      "original_sha256": "f0f6b31254a464c6615ee96919980b2e8c9c799a5186cf69ad35f180adc471ef",
+      "original_bytes": 27608
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_tail_capacity.py",
+      "original_sha256": "5d9a92b0bf014dd1afbeb51d39a07bceef4cac68391107b58c0d7d90075bbe6c",
+      "original_bytes": 6218
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_tail_history.py",
+      "original_sha256": "95341332c41913b702291597b3e7d443e6f8d0965b07eead0ed0bc8e689eb8f5",
+      "original_bytes": 3169
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_tail_policy.py",
+      "original_sha256": "985d033a53e89e84dbffb32d7856cbaf7a4d0fc5a464fe6fee86c8e8e15657d1",
+      "original_bytes": 9762
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_tail_reporting.py",
+      "original_sha256": "ad9c9ba0610377d43c576f5df6dd2738ad690d88bb549e20b4b85b9ea5fb6e0a",
+      "original_bytes": 9873
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_tail_samples.py",
+      "original_sha256": "d76a3aa3c158988e7bab0702609b0663117a869bef814459f6015a95bc8b0078",
+      "original_bytes": 11548
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_tail_switch.py",
+      "original_sha256": "7ececa85b4c1838a6252942abf7e16c8f8697eceeeb7fb5d8664dd73308860a1",
+      "original_bytes": 6342
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_tail_switch_guarded.py",
+      "original_sha256": "2e6788a390ae8fd46e8654c6e43d2356f58553c59d8da393947f637d0c43f265",
+      "original_bytes": 1358
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_tail_tables.py",
+      "original_sha256": "19bfc05a85d224a95b68315e6611b20ea5b5b24ae16ffc8b42c2f9cb00646fcf",
+      "original_bytes": 6949
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_time_precision.py",
+      "original_sha256": "8fdc39965f6c41112baa320d4e97d652bfdcd8ebb5840d889e9b99c9e9f82d28",
+      "original_bytes": 7685
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_rough_uncertainty_history.py",
+      "original_sha256": "7f01fd636e03729aa29e8f7c51be477385bdb06a32fa17598882768e7541c14e",
+      "original_bytes": 2900
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_spot_accuracy.py",
+      "original_sha256": "2f68e10beb35d1bde49ed721c1e1e6307ad66750fd73f230b0fa553ef56fab16",
+      "original_bytes": 7571
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_spy.py",
+      "original_sha256": "21c6d8b67a855fc9da3ab7ac3d41e4370ac24c495e7f91c7358ebc9114008c57",
+      "original_bytes": 1035
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_variance_curve.py",
+      "original_sha256": "4dc87d375e21a5fdd2f1dcb1f6659d63d8d454cc28dd632c6262916d9d19d046",
+      "original_bytes": 6308
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_visuals_curves.py",
+      "original_sha256": "a369ff278fbc93438bd95a9f251ae7716df5890ae71f2008e6bb07624e124654",
+      "original_bytes": 9703
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_visuals_inputs.py",
+      "original_sha256": "047edf77715e6e1c7ff89eff7911302c1f3f221c8f0b9674f8b789037b40b327",
+      "original_bytes": 5334
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_visuals_synthetic.py",
+      "original_sha256": "86b162e031b76e9bf1625d6dc05997e68d62689cb1d7b0ad71d5f12cf85fda80",
+      "original_bytes": 7748
+    },
+    {
+      "path": "src/rvlab/experiments/_pricing_workflows.py",
+      "original_sha256": "91f75d3385410824e80c32f15025b1d7a63997bc616ccd4e59278c6065d10a7a",
+      "original_bytes": 13438
+    },
+    {
+      "path": "src/rvlab/experiments/pricing.py",
+      "original_sha256": "18196ce8d9fbcb3e7bc25a38b49fe26db1c7c7906482517360271f2e1f531e50",
+      "original_bytes": 19099
+    },
+    {
+      "path": "src/rvlab/experiments/pricing_presentation.py",
+      "original_sha256": "a8e395a4429475d38420983f9c31b7b27221c2289d40997570f7039a1bcc643d",
+      "original_bytes": 20195
+    },
+    {
+      "path": "src/rvlab/experiments/spy_rough_calls.py",
+      "original_sha256": "f06e1e6f4391af58c55342a716fdda41a4af67c168faff5ab9b9400608120cc3",
+      "original_bytes": 48540
+    },
+    {
+      "path": "src/rvlab/features/__init__.py",
+      "original_sha256": "0334ef4f8a190455bfc680d8fd77bd04403c0636d2baed3a0f88564eaa023070",
+      "original_bytes": 2327
+    },
+    {
+      "path": "src/rvlab/features/encoding.py",
+      "original_sha256": "93fbfde9dbfe4acc1a838dd1f296cdef8dc2057acebe37247b26d89416668f11",
+      "original_bytes": 9389
+    },
+    {
+      "path": "src/rvlab/features/joins.py",
+      "original_sha256": "c56ff6f9453172552a7bc4a3fccfbc428bcdb5dc4524ed44dc368bb2e01489d6",
+      "original_bytes": 13811
+    },
+    {
+      "path": "src/rvlab/features/panel.py",
+      "original_sha256": "602f1fb8ec40d787fee15f299d1762bece673e422e6a18317607f4c21aeb875b",
+      "original_bytes": 12464
+    },
+    {
+      "path": "src/rvlab/features/realized.py",
+      "original_sha256": "ac1db672df8e92c7f1b49f9c06ba42af59324759bfdc7b646c9a83bf911f4ae8",
+      "original_bytes": 5532
+    },
+    {
+      "path": "src/rvlab/features/roughness.py",
+      "original_sha256": "0e4c04e72a6ccb352e5a69a7a106fa0ccbbff7e72dd1482d3855a7e821c64008",
+      "original_bytes": 6584
+    },
+    {
+      "path": "src/rvlab/features/smile.py",
+      "original_sha256": "15afcc44bd4ea389ea506f49571a077dba97644c9e9b9c5c8270d45242b85ed8",
+      "original_bytes": 6020
+    },
+    {
+      "path": "src/rvlab/features/timeseries.py",
+      "original_sha256": "bbad457521643c2e641719f6bfcf7896463dd2a3d48d4bc11bfe9ce14da7d0e6",
+      "original_bytes": 8253
+    },
+    {
+      "path": "src/rvlab/market_data/README.md",
+      "original_sha256": "6e9cba713d7d438c7e0595544ccba4ff77dfe78ef773d83cc47f409eaa42c04c",
+      "original_bytes": 13861
+    },
+    {
+      "path": "src/rvlab/market_data/__init__.py",
+      "original_sha256": "85993c8d63e82b29f76f346622ff43c88a6744711b32dd90c6baa77cdf150261",
+      "original_bytes": 227
+    },
+    {
+      "path": "src/rvlab/market_data/__main__.py",
+      "original_sha256": "2c3ed765ddca80c7a823a9f159e53baa93a02cb529f06461f22e31bf204bdeaa",
+      "original_bytes": 4877
+    },
+    {
+      "path": "src/rvlab/market_data/calendar.py",
+      "original_sha256": "d3716070df930350645eb4bdce6f24d69d8a2cc50a8276e71d56f029246b7290",
+      "original_bytes": 2662
+    },
+    {
+      "path": "src/rvlab/market_data/ingest.py",
+      "original_sha256": "74bb419b497c2cfc6b6e969706ffeb7da7353bf7bad1f30fe00718c6c9c27697",
+      "original_bytes": 20432
+    },
+    {
+      "path": "src/rvlab/market_data/pipeline.py",
+      "original_sha256": "cc12a4a886894e09e53321b0b462dc10c8e83cca613168054f699c58b7e28d2f",
+      "original_bytes": 23783
+    },
+    {
+      "path": "src/rvlab/market_data/references.py",
+      "original_sha256": "6ab13e5cf9e505f013a9c620d220c13f77b412174a3bf3e0f6a2afd4ca08b68c",
+      "original_bytes": 26362
+    },
+    {
+      "path": "src/rvlab/market_data/snapshots.py",
+      "original_sha256": "930883c46c316ef341818280b433298278524ea95b96d5665fc1eb7a917557d3",
+      "original_bytes": 24839
+    },
+    {
+      "path": "src/rvlab/market_data/spy_call_pilot.py",
+      "original_sha256": "e86798ebec4f8fd196859526b826134a2828fa0ac0ec00218c08da34c5da6a3f",
+      "original_bytes": 36784
+    },
+    {
+      "path": "src/rvlab/models/__init__.py",
+      "original_sha256": "bc36bb23ca1bcf84f5598af455644083ff40fae83eb4565b218b6c181310f9f1",
+      "original_bytes": 1288
+    },
+    {
+      "path": "src/rvlab/models/baselines.py",
+      "original_sha256": "8059b2dee257f4f57564dcd1e0afb613f34797e32dabde750e6f3773ca8d2b54",
+      "original_bytes": 7704
+    },
+    {
+      "path": "src/rvlab/models/blackscholes.py",
+      "original_sha256": "7ba3e9a9d97d744181e6a9f1f58841af686b2f1f6f3918442fb2254239d43202",
+      "original_bytes": 4201
+    },
+    {
+      "path": "src/rvlab/models/rough.py",
+      "original_sha256": "6ee59ef2b584c525427f5cc697fb12f84b358b002c074e28edf6c4116f7b5290",
+      "original_bytes": 6589
+    },
+    {
+      "path": "src/rvlab/models/volatility.py",
+      "original_sha256": "a928d19d524c10c0d3ee08751bd9ea81f07c4dacbb5d0100949f29bd269d5e5f",
+      "original_bytes": 16118
+    },
+    {
+      "path": "src/rvlab/pipelines/__init__.py",
+      "original_sha256": "d3c5856dfa479b4f496c62823ab71fea3dc563bd8426d1b18dea565ab40a9e64",
+      "original_bytes": 1214
+    },
+    {
+      "path": "src/rvlab/pipelines/build.py",
+      "original_sha256": "93032c25266b88f8f5c30d8753e89250d36709adfd1b3400413f9c91641612b7",
+      "original_bytes": 10481
+    },
+    {
+      "path": "src/rvlab/pipelines/inference.py",
+      "original_sha256": "d0662958cd11950dd5ec4c1a57e9ed037e43a66bef0fc4fd3b3d644df6dd1e47",
+      "original_bytes": 6324
+    },
+    {
+      "path": "src/rvlab/pipelines/splits.py",
+      "original_sha256": "c7127a4a3485cd50befe0eebecc958523d2c6cfa37c9f5a1a46f5d52e29ed89c",
+      "original_bytes": 11014
+    },
+    {
+      "path": "src/rvlab/pipelines/transformers.py",
+      "original_sha256": "20e4fbc732a8a2fa901a99ecb57a9d45a9ebc7bbd2e26faa713aa59df94a1e0f",
+      "original_bytes": 8412
+    },
+    {
+      "path": "src/rvlab/plotting/__init__.py",
+      "original_sha256": "b47c62c5a80003ea1b49f49980e77d99c961beee032af68c1b178f803f52e57f",
+      "original_bytes": 2246
+    },
+    {
+      "path": "src/rvlab/plotting/charts.py",
+      "original_sha256": "aab960302acae38d9a116641c76d163024c699c5b77fa0a3419929565c515d25",
+      "original_bytes": 19707
+    },
+    {
+      "path": "src/rvlab/plotting/gallery.py",
+      "original_sha256": "a96cc6397ae120f60e1cd6b662adeeb0c13758e0296c9c9fd233d3cee3c08fdc",
+      "original_bytes": 45262
+    },
+    {
+      "path": "src/rvlab/plotting/style.py",
+      "original_sha256": "33ded48b2555b6ad643242c14bd49cd0c3518a312982d36306b1dbec6671d27e",
+      "original_bytes": 3302
+    },
+    {
+      "path": "src/rvlab/pricing/README.md",
+      "original_sha256": "70937b8e80412a1f1fcda3b63647cea95e35a251ce4fd5f03403216ec09d110f",
+      "original_bytes": 44332
+    },
+    {
+      "path": "src/rvlab/pricing/__init__.py",
+      "original_sha256": "e50948bae1ec25b02ff2375afcf65fc5677d74204ccb00eb14c2430df911d952",
+      "original_bytes": 4060
+    },
+    {
+      "path": "src/rvlab/pricing/_validation.py",
+      "original_sha256": "94aac46f7bfc6fd4e9bea602f262d1fcc43cb7a4e9089566d619a9c9cf16f868",
+      "original_bytes": 1652
+    },
+    {
+      "path": "src/rvlab/pricing/_vanilla_bs.py",
+      "original_sha256": "ba4bfe19fafc06d902e381fbdbafc78bcc5f272c326a5c38c07b13fb03941403",
+      "original_bytes": 8569
+    },
+    {
+      "path": "src/rvlab/pricing/_vanilla_common.py",
+      "original_sha256": "a06798d20495f4db57f606d38680c662ed6e7621f40cbc411a99c4464a6a2e4b",
+      "original_bytes": 4278
+    },
+    {
+      "path": "src/rvlab/pricing/_vanilla_heston.py",
+      "original_sha256": "c3e7db8bfacddfabe4ca669982f7136e8bcfe6197a6e92c64d5798818e03e711",
+      "original_bytes": 18274
+    },
+    {
+      "path": "src/rvlab/pricing/american_calls.py",
+      "original_sha256": "c456456a8e9cb97f1720f9f5fb4773b711c5fc873044a92cfd347f19e8e286c8",
+      "original_bytes": 14288
+    },
+    {
+      "path": "src/rvlab/pricing/api.py",
+      "original_sha256": "0c6802ff1d524ddef661229af3f5f92a6eccd0167c7d56c7af95153e9293d2c3",
+      "original_bytes": 1599
+    },
+    {
+      "path": "src/rvlab/pricing/black_scholes.py",
+      "original_sha256": "5e027db45ea055da4e7a0db90cdfa061db94478840f9e2dbedc06e0f023848e9",
+      "original_bytes": 1916
+    },
+    {
+      "path": "src/rvlab/pricing/calibration.py",
+      "original_sha256": "e51bba9ac821a8d39a7edf2313c4fa8cbbd9d93bd6d943405c2e2e9c1cdb5968",
+      "original_bytes": 22502
+    },
+    {
+      "path": "src/rvlab/pricing/diagnostics.py",
+      "original_sha256": "1d25d37f3b11a87e8a74bdd46ff25b8bfad38085d14f410f6b72757db23976bf",
+      "original_bytes": 6923
+    },
+    {
+      "path": "src/rvlab/pricing/fourier.py",
+      "original_sha256": "c38a4a6154c94a6901aeeb5d76dabedb74059d1dd5c06bc8634e0ea73a1e7e3b",
+      "original_bytes": 3589
+    },
+    {
+      "path": "src/rvlab/pricing/heston.py",
+      "original_sha256": "883d2439c84fa59e6e4a97a17ef4475176ec3a30e14cba0c2d30fca8c620a5f5",
+      "original_bytes": 7528
+    },
+    {
+      "path": "src/rvlab/pricing/optimization.py",
+      "original_sha256": "f511274142aef897c9d867d7317aa6ddf41740da0a61d3dafdc8cc40d74147fd",
+      "original_bytes": 11448
+    },
+    {
+      "path": "src/rvlab/pricing/parameters.py",
+      "original_sha256": "dcce8625ffd2a6b4d08d29396ef442667801c39155062b56869a140e7129ad7c",
+      "original_bytes": 2160
+    },
+    {
+      "path": "src/rvlab/pricing/refinement.py",
+      "original_sha256": "cd4311284fa506cc5fed10d0b2f8f3476028581ae9b81e4f3ec2e8066ea22135",
+      "original_bytes": 4818
+    },
+    {
+      "path": "src/rvlab/pricing/rough_bs_premium_proxy.py",
+      "original_sha256": "529ae111d837cf1b57488853bd2299c3a04ca5e5069836eaa040e48655d55a93",
+      "original_bytes": 10916
+    },
+    {
+      "path": "src/rvlab/pricing/rough_dual.py",
+      "original_sha256": "98102a90fc6a0dd42aeae0d57b474e1550ad3eed15e9bf20f5a551af530e026a",
+      "original_bytes": 31955
+    },
+    {
+      "path": "src/rvlab/pricing/rough_estimators.py",
+      "original_sha256": "d3d5b71b7d3917d689bc13fc72ed14249a888a94b8adbbf97c240626b14761b7",
+      "original_bytes": 21885
+    },
+    {
+      "path": "src/rvlab/pricing/rough_heston.py",
+      "original_sha256": "de9b9e89a2fca1084e4b580b368eb14cfad7b0fca3d9417a3028a7d018ec41a7",
+      "original_bytes": 9542
+    },
+    {
+      "path": "src/rvlab/pricing/rough_lift.py",
+      "original_sha256": "7fb27e1e7ab2907ba7c38cd6d001ab898d9d6314b3648a6c3d87fee5397893a9",
+      "original_bytes": 16754
+    },
+    {
+      "path": "src/rvlab/pricing/rough_obstacle_premium.py",
+      "original_sha256": "2507ac1e816b9704972c0b2f71a79299a64ff60d0e88a648cc601de8ee71ad7f",
+      "original_bytes": 8501
+    },
+    {
+      "path": "src/rvlab/pricing/rough_policy_diagnostics.py",
+      "original_sha256": "e991980b7b79f7a88a5f4b4ac7831909125038325ba6adab737f580ee0205c63",
+      "original_bytes": 28675
+    },
+    {
+      "path": "src/rvlab/pricing/rough_policy_reference.py",
+      "original_sha256": "0463dd180a52f4b65c49efc07bbc99ccde9b220708073875c38d39d358a72891",
+      "original_bytes": 6477
+    },
+    {
+      "path": "src/rvlab/pricing/rough_simulation.py",
+      "original_sha256": "7337eb73fbfe2f484fadee53a4a870adde50af41183512f8066e8dd97e869c9f",
+      "original_bytes": 29297
+    },
+    {
+      "path": "src/rvlab/pricing/rough_stopping.py",
+      "original_sha256": "1149b5252e97efa8aa15edcace8bf2efad79f753215c1e163e5246664fd4fe9d",
+      "original_bytes": 51153
+    },
+    {
+      "path": "src/rvlab/pricing/rough_stopping_controls.py",
+      "original_sha256": "58bebfcf378a8ce894c2842502e6819495c58b609b360d7a7e694353042de96d",
+      "original_bytes": 28840
+    },
+    {
+      "path": "src/rvlab/pricing/rough_stopping_fourier.py",
+      "original_sha256": "272762dcee56745f50754f6484613b8c601e03776e9081f16c86368154b22cbc",
+      "original_bytes": 32912
+    },
+    {
+      "path": "src/rvlab/pricing/rough_stopping_reference.py",
+      "original_sha256": "43e08754dd68b9b182a9157ae82f6efeff2d9c34723945bcbaacb22b99d38b4b",
+      "original_bytes": 10660
+    },
+    {
+      "path": "src/rvlab/pricing/rough_tensor_premium.py",
+      "original_sha256": "f8f2d416b06364a86111955ca96c9300f82a5b1d1cc4f5e9283754e2dffd5c4d",
+      "original_bytes": 6546
+    },
+    {
+      "path": "src/rvlab/pricing/types.py",
+      "original_sha256": "e793ae6931d520cbb29d235e825ebcee286119e4ecfdeae8e681d930cc92e2d4",
+      "original_bytes": 3761
+    },
+    {
+      "path": "src/rvlab/pricing/vanilla.py",
+      "original_sha256": "061ef861b3a9a458fe383378ebdaf65de5b3d812010ec45f22ce8cc7be516f81",
+      "original_bytes": 22311
+    },
+    {
+      "path": "src/rvlab/pricing/vanilla_calibration.py",
+      "original_sha256": "c129f292fcef71743146365549d7c980b878330fe65e4e5e5b93a98b842e0f70",
+      "original_bytes": 12552
+    },
+    {
+      "path": "src/rvlab/pricing/vanilla_types.py",
+      "original_sha256": "2ff785adc0b3715d5cdbe87bc4d9bbf22e27152834a068cc217c358b65fb7dfb",
+      "original_bytes": 8626
+    },
+    {
+      "path": "src/rvlab/pricing/variance_curve.py",
+      "original_sha256": "45bd436e7c32064748ea1a4270cf3dee02c1d9132b749507a6cfc1cbf5964e9c",
+      "original_bytes": 19410
+    },
+    {
+      "path": "src/rvlab/strategy.py",
+      "original_sha256": "1f7067a85368167b23441dec1377b23e4b890b23afc18ca14fdb3f6bf7c64623",
+      "original_bytes": 15018
+    },
+    {
+      "path": "src/rvlab/tests/__init__.py",
+      "original_sha256": "184ebb3504753f9b37c785f4315f6c6fd070859736354188dc7ff61aa6e15cf5",
+      "original_bytes": 69
+    },
+    {
+      "path": "src/rvlab/tests/conftest.py",
+      "original_sha256": "f96a959cb49470eafccd65f37ab5c6014ed468f9622189e8d896846b4fa04c54",
+      "original_bytes": 1147
+    },
+    {
+      "path": "src/rvlab/tests/fixtures/rough_stopping_cancellation.npz",
+      "original_sha256": "cee34d72613547c84d212c03b0eeb586f852936a060b9be0e3c5528a81d2e87b",
+      "original_bytes": 2254
+    },
+    {
+      "path": "src/rvlab/tests/fixtures/rough_stopping_thin_cap_bands.npz",
+      "original_sha256": "d99e481c3539619750ca2bb590fa0bd5c366ada4c7e68fd5e8085d82461ad8b6",
+      "original_bytes": 1516
+    },
+    {
+      "path": "src/rvlab/tests/test_american_calls.py",
+      "original_sha256": "8f38177832c7b7537a760b4298941b5ca198c6f8e5513650207e040c5c9297fc",
+      "original_bytes": 14593
+    },
+    {
+      "path": "src/rvlab/tests/test_catalog.py",
+      "original_sha256": "1a5bf3e46791197ded1a7ccc7204f11fb9a7eb6d16984d3dd79f8d2aaeddc0f4",
+      "original_bytes": 7281
+    },
+    {
+      "path": "src/rvlab/tests/test_competition.py",
+      "original_sha256": "3abb7d1b27f8a5e4614ca24517649b1d525dcd0411a97d8e7c3e25dd7c463a02",
+      "original_bytes": 54988
+    },
+    {
+      "path": "src/rvlab/tests/test_config.py",
+      "original_sha256": "dda57efe245ca1d72be30a04179f50f1bb88c52e4fcd60369eba1ae84c03e4aa",
+      "original_bytes": 2451
+    },
+    {
+      "path": "src/rvlab/tests/test_data.py",
+      "original_sha256": "4edb22f804904f4803c7cb49ab90b29a66a21449f6e99e6c5843de2f0379f546",
+      "original_bytes": 6390
+    },
+    {
+      "path": "src/rvlab/tests/test_encoding.py",
+      "original_sha256": "0b52ffab14b89a087c2110abab5764634c67f4463ba1c69e81c47ef9c9f64652",
+      "original_bytes": 6996
+    },
+    {
+      "path": "src/rvlab/tests/test_evaluate.py",
+      "original_sha256": "da29abc7f7060cf9449c02c190dd94483e3c5869ed5e6240316b7f608a5d8249",
+      "original_bytes": 6159
+    },
+    {
+      "path": "src/rvlab/tests/test_gallery.py",
+      "original_sha256": "1c03ea914287b168fe43c37fcb1a6d38625257ce240e38c5fafdaf3cb5162cd5",
+      "original_bytes": 6902
+    },
+    {
+      "path": "src/rvlab/tests/test_joins.py",
+      "original_sha256": "1ab876901e27f42604db171a8413992a6cefcf00503ffa979352e3da14eb8b35",
+      "original_bytes": 8511
+    },
+    {
+      "path": "src/rvlab/tests/test_market_ingest.py",
+      "original_sha256": "9d4c209137a805f9337e23e52e1627dea0095c81b83cafd8babf1494f4ad87c3",
+      "original_bytes": 13927
+    },
+    {
+      "path": "src/rvlab/tests/test_market_pipeline.py",
+      "original_sha256": "77d62a502b0fecb8a24249001503a6231b8fbb4c5345e82fc462c1d39aca1617",
+      "original_bytes": 10785
+    },
+    {
+      "path": "src/rvlab/tests/test_market_references.py",
+      "original_sha256": "70a75a0721e9ec0014ecf9843b4da6d0da588c0bb1c460997a1abf66443e37f3",
+      "original_bytes": 11011
+    },
+    {
+      "path": "src/rvlab/tests/test_market_snapshots.py",
+      "original_sha256": "e1eb4b60c658e1636fc92ffe5e847fc6c658e15ef188bb64b48d1c621de2338d",
+      "original_bytes": 20023
+    },
+    {
+      "path": "src/rvlab/tests/test_models.py",
+      "original_sha256": "04cc07879e4a1b09f6a80a13208960ec59d5fc8016ec610b0b7472bb70a10d80",
+      "original_bytes": 5904
+    },
+    {
+      "path": "src/rvlab/tests/test_notebook_tooling.py",
+      "original_sha256": "0b3fd310993cfffcc25d51dee6dbb0f43067a1a930a7496dd3dca060e8b77bd9",
+      "original_bytes": 5793
+    },
+    {
+      "path": "src/rvlab/tests/test_panel.py",
+      "original_sha256": "02b4a7a6ccdc3f1c2da98532de19aca4099d60c3cd0b02d53579e3b35beadcd7",
+      "original_bytes": 16996
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing.py",
+      "original_sha256": "237b7e7724a861cfe6e711732b0844864ff682ddb5da18ed655f54151d008f28",
+      "original_bytes": 17583
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_american_bs.py",
+      "original_sha256": "1afd8fb734b3537848ca092a70c886b60860a30b151fa423c997df4634652a5c",
+      "original_bytes": 14450
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_american_heston.py",
+      "original_sha256": "1dd3226483d4c4151e61e3aaf5dbd77854730bcf4f340f150c9e848ca4c69052",
+      "original_bytes": 12570
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_american_identification.py",
+      "original_sha256": "a630981e61a12ea91b43e412286e675266e3d316ba9895a4ed51dc9ea07e56d3",
+      "original_bytes": 23471
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_american_workflows.py",
+      "original_sha256": "a2a790f191c2c6997b84365b2a5bea2217c97470f0b1b52a4969e1cbdd1a6125",
+      "original_bytes": 13165
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_archive.py",
+      "original_sha256": "0be7a65498a51f3d901eb4c898e91b6de268fc55846647a906b95bd936755fe7",
+      "original_bytes": 1378
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_benchmarks.py",
+      "original_sha256": "c1092e750dae17e88f1c1cdcc2b8d69b1c3bdbaa6276cd576a68dc74e9e1ff05",
+      "original_bytes": 10228
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_bounds.py",
+      "original_sha256": "f3fdcb60388b849294f0e4d4de6294a5809df71f1e194ae958d47787e571e521",
+      "original_bytes": 8759
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_calibration.py",
+      "original_sha256": "db3bd30875d060758cd713789f72d787aeb4c3389e3270cb9d39249993c4e419",
+      "original_bytes": 14576
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_convergence_checkpoints.py",
+      "original_sha256": "9842d4d0d540feb45bf85ef098a0c5aacbacb23f882a5838f7202bb4821cd69e",
+      "original_bytes": 4495
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_curve_calibration.py",
+      "original_sha256": "f5201cd7e3dcf62eba16affe74ebe8aa61f398ac4bbf69e3ad98029d5dec8815",
+      "original_bytes": 5089
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_curve_diagnosis.py",
+      "original_sha256": "9794a55ad1ec4b5fb93f7a39067c3b589e2513c217a883438e90f0cc40f2233e",
+      "original_bytes": 4808
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_curve_geometry.py",
+      "original_sha256": "3564036a239bb6f3fd3ed0ba1752e9d17d6775fdcba006897b34ae8af2db5174",
+      "original_bytes": 7429
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_curve_kappa.py",
+      "original_sha256": "555473386f04f33be282484e31d1984c5f75049764dbb1e7ebf36e33c10471dc",
+      "original_bytes": 3992
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_curve_reference.py",
+      "original_sha256": "d9f1958bed67f53c7e0354e34e937da0aa133e2af7f2cedb41b45bd912f3a90e",
+      "original_bytes": 13216
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_demo_accuracy.py",
+      "original_sha256": "12f1369ba528de91a8635ceb36e3c26691098ba5192d302532ea5ebd84372d6e",
+      "original_bytes": 2433
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_demo_data.py",
+      "original_sha256": "4f32af0826e3406002fc866cad7d506b211be6ebfd1b77bf221111a8cc8592d2",
+      "original_bytes": 10195
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_demo_execution.py",
+      "original_sha256": "a72588ba22bfe8c83d2785ba7cdb83f731eb0a87830ee10d8010e0cb5d6d4d7b",
+      "original_bytes": 8751
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_demo_fits.py",
+      "original_sha256": "0cb1a47ab513315bdb4b629ee4fddfafa3ddf82a64cd2a6a7b4ba1fffb92f056",
+      "original_bytes": 16965
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_diagnostics.py",
+      "original_sha256": "3386260d26a5f1e1c2a21ef066d89c2caaccf98ce40a4ce2b0df3ee752b84141",
+      "original_bytes": 7829
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_exercise_proxy.py",
+      "original_sha256": "48bc0ce11789803f0161db0d409f85c297a0146b0ab6f13aa118e7021cfdb9ba",
+      "original_bytes": 7736
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_first_stage.py",
+      "original_sha256": "3dc38ec7a62adbb3034b42020f2a89fabfa58887c2495ca79c262b7c94b7dcd7",
+      "original_bytes": 7944
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_first_stage_cold_calibration.py",
+      "original_sha256": "e03a894df9d9c6f35c258bc3e58c9af743740668375b153faabe348291ffc000",
+      "original_bytes": 2329
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_first_stage_notebooks.py",
+      "original_sha256": "bb330276ff734209fa3ea2cbff4f11cb789ac9c6e79786ee3c1fcbbe48fdb4a1",
+      "original_bytes": 3561
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_first_stage_presentation.py",
+      "original_sha256": "3baddd40c676042cee779c208a36bbd1ecb5d4ffac596f34cca5383457026a1e",
+      "original_bytes": 6588
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_first_stage_preservation.py",
+      "original_sha256": "ff42425cf70ddd2da3017844cc1ca88e9d7d1df0494af01a797c05a1749b3b79",
+      "original_bytes": 1250
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_first_stage_release.py",
+      "original_sha256": "7cdc0aceb902b32b885d82d86232a006c6a823739477bf817a04efa97e0bb95d",
+      "original_bytes": 14008
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_first_stage_reporting.py",
+      "original_sha256": "d2d1b97c5628ee3f1b45e71bf7acb07591d19687210c7e0481f27b8512201e42",
+      "original_bytes": 10148
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_fourier_accuracy.py",
+      "original_sha256": "fe1802b40dff9092b7a50607f610d0be9aa8c5c6b6343cee1155814251bee15a",
+      "original_bytes": 5833
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_maturity_accuracy.py",
+      "original_sha256": "17ae1bf2591e86dc2c412791a6109d978f340664defd8a5e8f89bbc187f52bc0",
+      "original_bytes": 4682
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_maturity_geometry.py",
+      "original_sha256": "fec5dce2fd896463d22c2e77ef8fffe4765d56e1c44ccd9971f9f6ea9780beca",
+      "original_bytes": 4470
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_maturity_reporting.py",
+      "original_sha256": "d63a52fe0974e07f4ffd82bfdd38d207a57b6334bf040d0b9e41ae49cab5b5ce",
+      "original_bytes": 4085
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_maturity_study.py",
+      "original_sha256": "8ed0303fceaa9192ca71c4d344e0f119b1bc58fed09a7dbc2ef20ed9380fe53e",
+      "original_bytes": 6601
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_optimizer.py",
+      "original_sha256": "7f5b94b7a6389cac86a3f51b98ca3003e7f3267f5be91aa8a00d4250aeec5e57",
+      "original_bytes": 7426
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_policy_comparison_audit.py",
+      "original_sha256": "b04f24bbceda3901c9cf0272dca308c0280a5828f388c595cee45247cfc82661",
+      "original_bytes": 12498
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_policy_comparison_independent_audit.py",
+      "original_sha256": "8af4e9b5bb52fa063d7361e925bfc6d3847280d29d0e1ae01a9a7c2524f568d8",
+      "original_bytes": 5330
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_policy_comparison_notebooks.py",
+      "original_sha256": "8c1889c5f8158ea9d27c97239029e069186e3dea3cc48e45086902a2fd184ae3",
+      "original_bytes": 3298
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_policy_comparison_numeric.py",
+      "original_sha256": "e023be73838ba4c2e9be765bdf471e03764ecced08bddf3377c95cb5d7db6cfd",
+      "original_bytes": 17999
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_policy_comparison_presentation.py",
+      "original_sha256": "8c3886d5c01961de0cf3634262b3c4e9cb92ecc118ffc14ea505b7d9b679976d",
+      "original_bytes": 4559
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_policy_comparison_report.py",
+      "original_sha256": "e000dde5f11b5789448e4536c62b5e9c96a14c98ec63244d47220e4a62b671c4",
+      "original_bytes": 11603
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_policy_comparison_stats.py",
+      "original_sha256": "4be3bc5c1b042d3add8fc1d77e36f1d3a81d3f0ea8f495fccf0afd0b5feac50e",
+      "original_bytes": 9685
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_policy_comparison_workflow.py",
+      "original_sha256": "91ea20154e63be424df2ba72b7007c91315baf9f910223fcf0a2ca3165fb4f75",
+      "original_bytes": 8023
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_presentation.py",
+      "original_sha256": "9f9c6214aedca86dc06b65dc0fa4955d27fd34b9a304da5f89dfd9620d69885a",
+      "original_bytes": 5217
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_refined_calibration.py",
+      "original_sha256": "7f954ba26c87cdec3cb7cb6827e423b1c4b17ced831473ac1dddb0c292729add",
+      "original_bytes": 7839
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_research.py",
+      "original_sha256": "2e19e9bfadb3663660b2c0357b40ca766037d326473a6367e358921f81f27f30",
+      "original_bytes": 9820
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_research_tooling.py",
+      "original_sha256": "c637ce16fc3d28804314f2df24bff50fba8b198aafc8cf994f180d3b810e98bb",
+      "original_bytes": 5155
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_riccati_accuracy.py",
+      "original_sha256": "f88090c340f03d7e9915a4bf1cf1593b078f686201c6a10c86f891314ce675b9",
+      "original_bytes": 7212
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_american_accuracy_study.py",
+      "original_sha256": "b42059398c18d0bc4d6d1af681e97bd1e649c33cd1ddf891048e0d5ee9c7f985",
+      "original_bytes": 15864
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_american_study.py",
+      "original_sha256": "3ec44fab166c371514e1e59769128ed159dbea906c7a9f491526cb9f4cef8f14",
+      "original_bytes": 21490
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_audit.py",
+      "original_sha256": "c98c076f3836ae5ee3bc40cb0551deebc1cc9f918c306fef4a0e882e5449001a",
+      "original_bytes": 13363
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_audit_collection.py",
+      "original_sha256": "b4639627cb757108b49d230d9bcf976bd66b18ce0aff2a460e749ad8da7622b5",
+      "original_bytes": 12906
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_collection.py",
+      "original_sha256": "ce378be47250fc0827fa3393425b0a6b5f3e6177a24692ebf084edb03f5372e4",
+      "original_bytes": 11717
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_control.py",
+      "original_sha256": "f24122965cd65637cb7872f5cea89709f21e0144cb9b083846fd1b1684adc4e1",
+      "original_bytes": 8516
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_control_aligned.py",
+      "original_sha256": "16199a5545c5f0757285ece7f096de5114b5b9afa0c1e0e13730fda622500c47",
+      "original_bytes": 4801
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_control_collection.py",
+      "original_sha256": "b5ea3647e5a0b17f5a861714a58662b3a0c51ba9b8b6fc54c6b8b556c5272570",
+      "original_bytes": 9609
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_control_runner.py",
+      "original_sha256": "cd913c591eceece89fb7c43e5879c3803be5783aa3104a49d61edca53aebc793",
+      "original_bytes": 3861
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_control_samples.py",
+      "original_sha256": "b32c07208d118438be7cdc2b937c59c69b11cebb7ba127abf6078b83eb333734",
+      "original_bytes": 3022
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_delta.py",
+      "original_sha256": "c5c26434307bfe721425b234d06b2b3cb4f39f9c5aa64aa81082f2d83046edef",
+      "original_bytes": 6079
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_delta_collection.py",
+      "original_sha256": "f1a02d7cc885e2fa2ece4b347e51b4331e5185923c9b23d32bfd9cf8c6c7d53c",
+      "original_bytes": 4628
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_delta_history.py",
+      "original_sha256": "2f9ae93152fbe052c5f370d307cf69f4a6078074cd46dc5006d16a39c063165d",
+      "original_bytes": 3614
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_delta_notebook.py",
+      "original_sha256": "db746caf5300a06ade5337c8af942d5ec79e3c4ac556cb6b896e170f8f0afc0b",
+      "original_bytes": 4684
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_delta_reporting.py",
+      "original_sha256": "5d9f10e28b02953d109869392d030fde5a8f51caeb7d168d5db7afbda814c773",
+      "original_bytes": 10180
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_delta_samples.py",
+      "original_sha256": "b3800dcedeb29496e5de5e1f7db3d0cbcd543acc824550b0cbc1575e28746c4e",
+      "original_bytes": 3998
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_delta_tables.py",
+      "original_sha256": "ddef58e1bcbe487e03ea73323ebe7ac4b75ca6663bc229887a7b93b7487435c9",
+      "original_bytes": 2187
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_delta_workflow.py",
+      "original_sha256": "f933c718bdbdc8eb005804cf883f332835568a2afd574f9c5108d40529de393e",
+      "original_bytes": 4373
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_history.py",
+      "original_sha256": "9c7605a057f25c26efd63e01d963fb59fcc38512961ad38c603a64db77ceb041",
+      "original_bytes": 3632
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_notebook.py",
+      "original_sha256": "d709d67778be85485ed69594a3e77176a93e95a09cdc0414c7bf9f624ee26cb0",
+      "original_bytes": 3645
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_policy.py",
+      "original_sha256": "8571244449e63b1a7cda5323003640aed628e7abc283188affd5ba878b74660f",
+      "original_bytes": 6264
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_reporting.py",
+      "original_sha256": "13be98200ac902cf9b2360303ba0fef758f8bd183b81de1f219bc2b7c73e0504",
+      "original_bytes": 5772
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_runner.py",
+      "original_sha256": "ae633b1cf18d0cabe664c1e7241cf87fb3b36275367683c68d7fc459a78239b8",
+      "original_bytes": 2178
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_samples.py",
+      "original_sha256": "fd2f90295e4eb834d13ac39b7e54742028b5cb7d14674c36b35f950157977c8f",
+      "original_bytes": 3713
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_tables.py",
+      "original_sha256": "ff2501f81ac8af2cf7daa5ecc4033de407870f86c2950d543703a6f07f2ce9c0",
+      "original_bytes": 5213
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bellman_workflow.py",
+      "original_sha256": "6e0990437b2b42ce0b25c8a2ad2725465e92b61def1de0b9705cc55b41710807",
+      "original_bytes": 8882
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_benchmark_audit.py",
+      "original_sha256": "ca1d9bcee8c985c3377033396587c3b7fd2350a331481a1e432c6ea4e23cdba9",
+      "original_bytes": 11510
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_benchmark_collection.py",
+      "original_sha256": "842065368dda4792a54d047ef0e59c8016e9f95fb7da7a1a57fd9798e77d6421",
+      "original_bytes": 7836
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_benchmark_numeric.py",
+      "original_sha256": "e2f79ea445b47845a52d6ce6e69e3ae1b2461ce75fdb6fbbc9ea509825fa30ce",
+      "original_bytes": 7825
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_benchmark_recovery_collection.py",
+      "original_sha256": "cd95daa6d085a952dc211b8758a149f1a26f025912a0ecfa409d0b623c83a3db",
+      "original_bytes": 5193
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_benchmark_reproduce.py",
+      "original_sha256": "f3e7368bc77362f0506254214b21e201419e2b07391d45b9f520797fe617a91b",
+      "original_bytes": 9785
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_benchmark_serialization.py",
+      "original_sha256": "b011f116c4455085355723c916d2835d7bc12ba619a7db50f3b53c7503ff3b17",
+      "original_bytes": 4591
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_bs_premium_proxy.py",
+      "original_sha256": "19983590a308b07e3ba955300945fb45160408ce7d9afe1648c310c4bde7da66",
+      "original_bytes": 4655
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_centering_audit.py",
+      "original_sha256": "2a8d4dbc6fc12e20134d41081543b160de86310233a337d4c02b7be204424941",
+      "original_bytes": 7511
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_centering_notebook.py",
+      "original_sha256": "a3bdee1a8d5b6722274800a97f9ddb25c533cf062527c875f121e22f1d0242fe",
+      "original_bytes": 3445
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_centering_precision_notebook.py",
+      "original_sha256": "a5b67665a6f525bdda73dae64859c1239a11055d93228ebdccd0c03baf19ee4c",
+      "original_bytes": 3610
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_centering_precision_paths.py",
+      "original_sha256": "abf00abb6e75564b37b6e1d3b215996e9401ec9f774f5de344a31692193f04ef",
+      "original_bytes": 7403
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_centering_precision_quadrature.py",
+      "original_sha256": "8ef5411fa45c689dce9990269c5384af67e9ee1f269b4dc62fa6662acfe414f9",
+      "original_bytes": 6584
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_centering_precision_reporting.py",
+      "original_sha256": "74db77e5f2651fe8f0b3bae14ca33aa29457c7ea4438ad28d15bf57620a50faa",
+      "original_bytes": 7000
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_centering_precision_statistics.py",
+      "original_sha256": "d0ddcb6bb35932e867916db1245c13ca5812943e017896f1b4a068315851b314",
+      "original_bytes": 7495
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_centering_precision_study.py",
+      "original_sha256": "f39473aafb042c56e73828ca043fb412ebe0df93bf96705e5da44f5b5e84e16e",
+      "original_bytes": 10390
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_centering_precision_workflow.py",
+      "original_sha256": "8d18edf7532fc3f95cfb39a6ea4d79687dd31169b431d32bdd47089fc878696d",
+      "original_bytes": 6208
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_centering_reporting.py",
+      "original_sha256": "7e90247b9260b0598e1355a1689d0db8dfb99802a7e261a4367400fdddc6e229",
+      "original_bytes": 7309
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_centering_statistics.py",
+      "original_sha256": "551ee074f41563ddb7b10826bb02183a9439eaafdba27cb0ce81924aac1d39f7",
+      "original_bytes": 5464
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_centering_workflow.py",
+      "original_sha256": "e0ad01dc01d890f1765e1b048448b2290948e7fd7c9d439d686436eaf9fc29e2",
+      "original_bytes": 5716
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_control_centering_study.py",
+      "original_sha256": "f2c48b09911619526e9dc75a524156da8498f3d7bf27265c3abb38e0a87d56ea",
+      "original_bytes": 3905
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_dual.py",
+      "original_sha256": "9bf59eb1f343086c0ba057ed198992f752212ed4c2137f98a8ed074cf8b7ef47",
+      "original_bytes": 17029
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_dual_tightening_study.py",
+      "original_sha256": "2925a7f56015a559d6be0d7ba05c2a35f161d0c3a70ea617151907c35c2084ea",
+      "original_bytes": 19738
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_estimators.py",
+      "original_sha256": "02085d5d5966eb8ca5cfe9fc1d2d67b2f9d2df70ac9b05756d3b984e9bbae993",
+      "original_bytes": 13986
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_exercise_block.py",
+      "original_sha256": "169ea8f98c5d7a56bbcf20c70d1ad7be4a8382e47499faee3efc6059c089b0d3",
+      "original_bytes": 5533
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_foundation.py",
+      "original_sha256": "613272308cbba0447038461a2ffcc2c3cc694f3d9e47286e62639af2d5a7cd0e",
+      "original_bytes": 10396
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_foundation_integration.py",
+      "original_sha256": "0774152ea6e0bf0aed6089bbc362c5e8bfd6d93b8d1171210c17766fbc704e73",
+      "original_bytes": 7960
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_frozen_policy.py",
+      "original_sha256": "7dd7eac832f45a6ac09f9013832b03de337c26481696c65e9fb1c9b9f03cb7aa",
+      "original_bytes": 3531
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_gap_time_collection.py",
+      "original_sha256": "962228b66e84b1ef6c84c279d944117a707d841208ec4b4b2c8dbbd12d68f037",
+      "original_bytes": 15986
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_gap_time_history.py",
+      "original_sha256": "ddf8a0f7930758d0a3fba3243750c7809da0fe3134ef2c259b704bbaabe7c2b2",
+      "original_bytes": 3680
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_gap_time_notebook.py",
+      "original_sha256": "869173612e600a835ddb9a522099dbe8592c0b4a50f2dcd4f8bf3868f861bd5f",
+      "original_bytes": 3142
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_gap_time_reporting.py",
+      "original_sha256": "19ee1d28475fcb189ebde0d245cb28a029a7506a109027303dbd6e9c33f2dd36",
+      "original_bytes": 7222
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_gap_time_stopping.py",
+      "original_sha256": "b08b89faaf9989f13ecaabe82c8d9a793dd7c1e92cb4ab4377c0ebbbfbc8d6a9",
+      "original_bytes": 16488
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_gap_time_workflow.py",
+      "original_sha256": "e4d4862d2c674c60f7884d53de3fc760cb0d9b72fd1735f4446ab41c6cf76fa3",
+      "original_bytes": 7244
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_lift.py",
+      "original_sha256": "27c3a2a81dc45453bf729b2fb568a4d49ba616a707a2204b16a9b6126f9536e7",
+      "original_bytes": 13490
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_local_control.py",
+      "original_sha256": "cb91e94e359d438501640f8af95e7611558b7c217d142c820b95ac3bcd9e4f25",
+      "original_bytes": 7855
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_mc_precision_collection.py",
+      "original_sha256": "a682becfe55e07d40fe8760d1f24e740243f1513bd2db33722f380e9cb4fe51f",
+      "original_bytes": 4143
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_mc_precision_history.py",
+      "original_sha256": "750ea474f51815fc0738d2ead2d81cca64b980abf9eeff72c9ecbec9c09faae7",
+      "original_bytes": 4863
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_mc_precision_notebook.py",
+      "original_sha256": "b291698bfa80706e88dba23deb448e4e1b274ae7c147b2f306cae591d70d1cf2",
+      "original_bytes": 2526
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_mc_precision_numeric.py",
+      "original_sha256": "35529dc2b46550f11e4b33c6df27e352711ae7b1c76feb53838a0e8ae1cde5e5",
+      "original_bytes": 7047
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_mc_precision_preflight.py",
+      "original_sha256": "cd02ace122175329e339cb8bbc41f9b601e872622b023c65fd5e301fc421111d",
+      "original_bytes": 9466
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_mc_precision_reporting.py",
+      "original_sha256": "421bb809495819ccadb465a22a29d243bcade7a6275c383c67d3e1411bafce1e",
+      "original_bytes": 6491
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_mc_precision_samples.py",
+      "original_sha256": "688a3fdb662525844e6a06d1e2dbec60981ef5f606f585057964fb85de431285",
+      "original_bytes": 7807
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_mc_precision_statistics.py",
+      "original_sha256": "d234581ab2bfe0ec023232f7ddbd9714ea4309756f4a196901cf5076eb037598",
+      "original_bytes": 7258
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_mc_precision_workflow.py",
+      "original_sha256": "698052f1cd42a9bd64486f57e555fa80f83505c587dbddb4ea18ad8869bb5c47",
+      "original_bytes": 5244
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_new_policy_delta.py",
+      "original_sha256": "5c1c52dc805d2cec03e529132a2a5dd85d6c098015016a4e5c5afac7aec5f2cf",
+      "original_bytes": 4909
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_node_refinement.py",
+      "original_sha256": "bdd64c4298a4466bb6841699597d322d255e9a16c45c54e45d1365e81691890c",
+      "original_bytes": 4720
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_node_refinement_fast.py",
+      "original_sha256": "e712193c28b2e38181a5fc9980da189a61f26841a49495322ac3742973b699c3",
+      "original_bytes": 5979
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_obstacle_premium.py",
+      "original_sha256": "d982e4a093404c94ebd3026ce4a6bf10737c19ce96ab42800973d31363ccfe3b",
+      "original_bytes": 12106
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_policy_control_neutrality.py",
+      "original_sha256": "23d1b279d99a18133db626eeca637ef7bfe84182b9bc9feb63d21469603438cf",
+      "original_bytes": 5858
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_policy_diagnostics.py",
+      "original_sha256": "8f93eab9b2bf800c55577e8ca5cc8ab8be121fc144bad82399ce2aa0688be6d8",
+      "original_bytes": 13400
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_policy_improvement_study.py",
+      "original_sha256": "2d20f69497bc02373cd59d7c580742924a95d5ed20ec0249da193dd599e2de70",
+      "original_bytes": 6690
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_policy_notebook.py",
+      "original_sha256": "b73d0aefd7dc161ab8b98d6edbb5cfa78d7be1525c8fbe4ffbe35e29cb9bbc2f",
+      "original_bytes": 4412
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_policy_reference.py",
+      "original_sha256": "0d97bb4ab15b068684904de481e2c89750758bb31fa7294c64aec0c636b492e8",
+      "original_bytes": 3922
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_policy_reporting.py",
+      "original_sha256": "a94829b6bd96027f390cb267d401dcaba2f42bbdc9a5eb837de5b03ddb21636a",
+      "original_bytes": 5553
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_policy_validation_collection.py",
+      "original_sha256": "0c118173510cc7de55f44e4b3e4021b3758bf5f8e1e4ec1fa916d24147bfde91",
+      "original_bytes": 14887
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_policy_validation_history.py",
+      "original_sha256": "851500bf6f154571e54aa4680342b1dff53d48a99c984347dae031aaa10e3d3c",
+      "original_bytes": 3483
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_policy_validation_notebook.py",
+      "original_sha256": "ee3aba8ac638d066331b8f8c8b686b42de18e7b512d3c469db7f3691213bba77",
+      "original_bytes": 3039
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_policy_validation_reporting.py",
+      "original_sha256": "1b42ffaf70ce10bac923a238cf184db797ed0700547d6044d69561f62bc0f4a2",
+      "original_bytes": 6706
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_policy_validation_stopping.py",
+      "original_sha256": "cd7e879a427c55baa785f174590fbe2282d07d56100dece01e057604f50a44a2",
+      "original_bytes": 3324
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_policy_validation_workflow.py",
+      "original_sha256": "3009831bf1b95dd77188b8793878c5a8fbba288643400a6b773e7abb754cda76",
+      "original_bytes": 6831
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_policy_workflow.py",
+      "original_sha256": "908d5bf6e0d354aff75de02750f8709d6da70c5be2fa5bda5476dd004b27b0d2",
+      "original_bytes": 7811
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_precision.py",
+      "original_sha256": "2e313e27f46c0dadd8cc575e58a9eff6819381d9fe7928c320875524bf17d6a7",
+      "original_bytes": 23964
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_price_budget_audit.py",
+      "original_sha256": "324167c88ac2e3f868e9f4813237d137217f236bfec5fd3484717fa354702c05",
+      "original_bytes": 5432
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_price_budget_basis.py",
+      "original_sha256": "575cd5b4cbb7d0634a7680cba44c477717ff988b1367e5d842d602fabb3e7e4f",
+      "original_bytes": 3104
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_price_budget_collection.py",
+      "original_sha256": "387d252fbad41cf9693b7694e6e2dbba946b7d5927a011d77b27f8de11aa37a9",
+      "original_bytes": 5097
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_price_budget_gap_diagnostics.py",
+      "original_sha256": "b42a94ef3c420d34626a5d9c636f1f2bc41797c2d36bd6d5c4a3d0c41c6b3e0b",
+      "original_bytes": 3317
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_price_budget_history.py",
+      "original_sha256": "0d2a8e8876b55283bd0648f0ac6c09aa73560be7c49903dfbb1ec0a9152b86d3",
+      "original_bytes": 4909
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_price_budget_math.py",
+      "original_sha256": "20072da8208ebd5a075a536a334040db414a7740b71876cdcb4a66fe4e68d96f",
+      "original_bytes": 6835
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_price_budget_notebook.py",
+      "original_sha256": "c25d9673f8c23cab60129d6e9a3ebd4d5321442b0b8b56a7ac6a2f3fab0b8fb1",
+      "original_bytes": 4711
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_price_budget_reporting.py",
+      "original_sha256": "e320214e9f1d899cb9350735f713b90428c0bc8d50d9ec7b023a5b0d16514217",
+      "original_bytes": 8581
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_price_budget_tables.py",
+      "original_sha256": "414265b0795429f53d9a05473532ef0942102ebcd2331a7699a9798751964e45",
+      "original_bytes": 3103
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_price_budget_trials.py",
+      "original_sha256": "58592f3da91c0efdfa645e8096a37c767c07f252d4d878f9b0c453304ae28476",
+      "original_bytes": 4801
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_price_budget_workflow.py",
+      "original_sha256": "13060f7115b8fe7544a29ab6174363c4248af6c31d38cc28ce93ff4e9be6f6c3",
+      "original_bytes": 4392
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_shared_delta_collection.py",
+      "original_sha256": "01df522d0e7d6d0b50c74c764bdb5b008fd23f08779848c38a3a8193631cbc7f",
+      "original_bytes": 8255
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_shared_delta_history.py",
+      "original_sha256": "9e88101f906daf6bd9ee03d108865c884d9dd5e448b6436b76c2b96acb15c1bc",
+      "original_bytes": 6442
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_shared_delta_notebook.py",
+      "original_sha256": "232e89e445e214a44cf17a2e9941401ace58f01faf557b43b8acbb7bc6d26f42",
+      "original_bytes": 2680
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_shared_delta_numeric.py",
+      "original_sha256": "ba08f9d03e49fee3e65071e731f59460f247bb8399961a76e3157cf537c7bf67",
+      "original_bytes": 5569
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_shared_delta_reporting.py",
+      "original_sha256": "0ddccc3ed39a15fb46a8c3d5ed71d7ad74f8fcfe28f9c36f84bf6aa79bf741a4",
+      "original_bytes": 7047
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_shared_delta_samples.py",
+      "original_sha256": "d2a803a2385ec4e0aed1b34e83b42dc989481f75340612fc39532dc4857bc3d1",
+      "original_bytes": 13156
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_shared_delta_statistics.py",
+      "original_sha256": "714dacfdb8940122db8ae6f0c85a5f1b2c5c459561a553425f92c517d793f4a2",
+      "original_bytes": 5536
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_shared_delta_workflow.py",
+      "original_sha256": "26a7202e4825cabbee811c94006de28681f9937dfc66320ecda21949b41710a4",
+      "original_bytes": 5150
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_simulation.py",
+      "original_sha256": "dabd80c4f69a6336aa6c16542eae6294ccebcf09b2f7a7d9765fc498184ded84",
+      "original_bytes": 13470
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_state_replay.py",
+      "original_sha256": "fc51ea0b4fbdb9af9bb809f89327c34b43c519fbfd7f62670b85a56b0d75502e",
+      "original_bytes": 1706
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_stock_delta.py",
+      "original_sha256": "65bbc3174aa24b283eede99ad9083e612cd6e20108101030ba26d68495ab14fa",
+      "original_bytes": 6138
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_stopping.py",
+      "original_sha256": "1fe642076400965e581eff4ce81b7ebdd790bea00bff91b9af5fd0cb900bda84",
+      "original_bytes": 24128
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_stopping_attribution_study.py",
+      "original_sha256": "02d3b251351a6b54bcae1cf682f62d67315568da347138896f1936270d350967",
+      "original_bytes": 20778
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_stopping_controls.py",
+      "original_sha256": "73a90ee30156cd06a34a88d936434f71edb443f96b63fff537cc3d40415579ca",
+      "original_bytes": 17588
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_stopping_delta_collection.py",
+      "original_sha256": "f63d040b940c27c29f2e8e913674f181f7a4909a86fa7e7068c388560eaec067",
+      "original_bytes": 22904
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_stopping_delta_history.py",
+      "original_sha256": "a10e9485559613512d4c25e4e22cd9951e07ac04a86b073f78e438b871fa3cfd",
+      "original_bytes": 3533
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_stopping_delta_notebook.py",
+      "original_sha256": "2c741260b4e4a864a3108fdc22c0214856e7baf48c49091a6871a9aa5ab73fae",
+      "original_bytes": 3096
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_stopping_delta_reporting.py",
+      "original_sha256": "7091f3af6d3236dae57a20c24db7a4f3a39969ab660aab05aedf3507b56bfd93",
+      "original_bytes": 3253
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_stopping_delta_workflow.py",
+      "original_sha256": "8defdd533aca549b944e720f8c3ec495cc4b3c5b1949354df40bb1bda918cf90",
+      "original_bytes": 6469
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_stopping_fourier.py",
+      "original_sha256": "38b99b1d9cd025fe5a8b670f5725d03de14842aac72c38ff96b70b3aa7297a3f",
+      "original_bytes": 18745
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_stopping_refresh.py",
+      "original_sha256": "7cfb83a3c9494712539409fe74227258582088f619f7625435abea232ba9fd5b",
+      "original_bytes": 9296
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_tail_capacity.py",
+      "original_sha256": "ac24fd78f14e2174ac7bc9f5ab05e9529e3567ddc22fed1ca0b03b8de6b65976",
+      "original_bytes": 5207
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_tail_collection.py",
+      "original_sha256": "042a131e39456fa78c4a0ba0f50b63350d40a46ab048773e8edf58ce7c53d600",
+      "original_bytes": 5419
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_tail_dominance.py",
+      "original_sha256": "19012372ba1bd76cd73625c8657ac526b5f69e82b36c113caa09e7e89a1b8f8e",
+      "original_bytes": 2434
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_tail_history.py",
+      "original_sha256": "233fcd885cc6de6c653e23eaf96b78b29a14ed6ec167637ad63f683c836a87cf",
+      "original_bytes": 3686
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_tail_notebook.py",
+      "original_sha256": "0bf98af7307ae714e351847b36a0e9be19240372f923de001464a4b2c4156314",
+      "original_bytes": 3678
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_tail_policy.py",
+      "original_sha256": "f45360ce2c454c66d68839da686e225c90989bff86b5a4aa00a265a6bea99a0f",
+      "original_bytes": 7455
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_tail_reporting.py",
+      "original_sha256": "2e4765ae4d55e08614cf2ec75e65b9cf8eca692b57c7620e978229dcaf86ecde",
+      "original_bytes": 6010
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_tail_runner.py",
+      "original_sha256": "4697df4ea6028f05be9df9fcab84c70c158c941b1a93de3aa4f712b89c06b906",
+      "original_bytes": 2497
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_tail_samples.py",
+      "original_sha256": "241080adb02b00f188ee7401622d36d9bd7a555a27581b53aba9c2a8a709162a",
+      "original_bytes": 10366
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_tail_switch.py",
+      "original_sha256": "94bc4c033128b28990a4b6ba119b2117dc5cee2e96280a5112c13c1889043a7c",
+      "original_bytes": 3014
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_tail_switch_guarded.py",
+      "original_sha256": "d6616b20b7bf42b8bdb0dec4c866267ff037db3b2dec28f53ce254958992c590",
+      "original_bytes": 1301
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_tail_workflow.py",
+      "original_sha256": "870fd072278eeca46a17aac7bd0f596ebc024e87516d3c341bf53508bf236dbb",
+      "original_bytes": 7512
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_tensor_premium.py",
+      "original_sha256": "cc1a3a51bf4704c4b6feb2fa951737a9fdbceea03408de0cfae1817c6766bd1f",
+      "original_bytes": 1963
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_time_precision.py",
+      "original_sha256": "09545773b241363b624a66e4c4e63c367e69d033b077ade25b980341c101b4c0",
+      "original_bytes": 4865
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_transition.py",
+      "original_sha256": "52c3cbf535ae9a10bc53a7c42bb3743184b29cff058201d693b6b22d52d3834b",
+      "original_bytes": 8280
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_uncertainty_history.py",
+      "original_sha256": "dea4975136e3fee62d232e809cc3a1494f42b5320ad6e8fa136a322139fa88c1",
+      "original_bytes": 4239
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_rough_vanilla.py",
+      "original_sha256": "9796998a4f2f3d0c918c497701d65713c2634522eae84cb945faea304e873ac1",
+      "original_bytes": 8117
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_spot_accuracy_study.py",
+      "original_sha256": "e0f64d8453f12527d98f9849c59a5b0ae44c9fc959b7d06c89bbefecac155f05",
+      "original_bytes": 3555
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_spot_grid.py",
+      "original_sha256": "910c8103337d4480097295279106e92eced46db6777609f90d524413b6c8d9a3",
+      "original_bytes": 3713
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_stopping_calendar_reference.py",
+      "original_sha256": "4f8314cb3abfac2c006fe804ce36ea485d805feaa0aa169113dd40266d963151",
+      "original_bytes": 6442
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_vanilla_calibration.py",
+      "original_sha256": "b5a604c3525398921e5d44d99216650b1c058eba2c3efcce9b5a8cdf0e22a6bf",
+      "original_bytes": 9743
+    },
+    {
+      "path": "src/rvlab/tests/test_pricing_variance_curve.py",
+      "original_sha256": "151dc470aea48df19ea666af34a42fb61f86d9aa141e9d5731c69f98c1403529",
+      "original_bytes": 11305
+    },
+    {
+      "path": "src/rvlab/tests/test_quality.py",
+      "original_sha256": "ec306ffa206a2e6378d171ec7e98427f8257edf2a163b32f22cf6c3018da3b89",
+      "original_bytes": 9841
+    },
+    {
+      "path": "src/rvlab/tests/test_setup.py",
+      "original_sha256": "a8f0253a0b270936cdd69f3f82ed714d1149b815f571c03705f1cb2552acc2c5",
+      "original_bytes": 564
+    },
+    {
+      "path": "src/rvlab/tests/test_splits.py",
+      "original_sha256": "a4a79cd4a219bd419ca7361a4308928941359319ab5f987b5674d87777c802fc",
+      "original_bytes": 5386
+    },
+    {
+      "path": "src/rvlab/tests/test_spy_call_pilot.py",
+      "original_sha256": "ae1d12eb72c7b08047234359b57a03d45db560f0a45cc666683614ffb3a06d91",
+      "original_bytes": 18223
+    },
+    {
+      "path": "src/rvlab/tests/test_spy_rough_calls_campaign.py",
+      "original_sha256": "c639e105c4514c45772a558a1af885072b4128cd094425eda0666c4b14292e02",
+      "original_bytes": 19635
+    },
+    {
+      "path": "src/rvlab/tests/test_strategy.py",
+      "original_sha256": "54c600c8d3564cb7f391943ee9889c01c2a5255dcfa76b6f10a6d16bbcb88c42",
+      "original_bytes": 9162
+    },
+    {
+      "path": "src/rvlab/tests/test_volatility.py",
+      "original_sha256": "55ea3101a3040318d663d16325c571c943611ec9ffc6bcaa27070355d70cce41",
+      "original_bytes": 8637
+    },
+    {
+      "path": "examples/american_curve_identification_diagnostic.py",
+      "original_sha256": "d3d9d03d7ab9b19578ddd091b2210ab190459d7fd4c58ddeb2aaef71f276c9da",
+      "original_bytes": 14167
+    },
+    {
+      "path": "examples/american_curve_optimizer_diagnostic.py",
+      "original_sha256": "eb2bb3eafb72a925037f698391f4596aac48785826584cf8df0f49c1f64670bc",
+      "original_bytes": 7380
+    },
+    {
+      "path": "examples/american_joint_jacobian_review.py",
+      "original_sha256": "5762fc05925bcabef0113506daf9247d868e16b4f6dbeba18bb4e78a0902647d",
+      "original_bytes": 7573
+    },
+    {
+      "path": "examples/american_maturity_grid_preflight.py",
+      "original_sha256": "ad0c1a4293684edc5c95ef92b7195646cd4a2c8a9b58f5653dc13850f6b62df9",
+      "original_bytes": 4792
+    },
+    {
+      "path": "examples/american_maturity_identification.py",
+      "original_sha256": "b604b5285bf9bce1b38287fb1bede8391b4eeed3523fc60545eacedd26e9e96f",
+      "original_bytes": 3071
+    },
+    {
+      "path": "examples/american_spot_grid_accuracy.py",
+      "original_sha256": "6ccaef205f2f2411ecffcf33b40ae0dc7d3aa56f038690cc7a5836679d01f5d3",
+      "original_bytes": 11467
+    },
+    {
+      "path": "examples/first_stage_cold_calibration.py",
+      "original_sha256": "ed9a84897a686a8e736a78b0ec8fc3b77e5773d03a8628064770c204b42b3522",
+      "original_bytes": 2493
+    },
+    {
+      "path": "examples/pricing_calibration.py",
+      "original_sha256": "299c20f45dfb67a3669ad3876a470c85db17c52b4b01822fe75b9864263aebee",
+      "original_bytes": 3750
+    },
+    {
+      "path": "examples/rough_american_accuracy.py",
+      "original_sha256": "4c60b799941b94bde112bf3a0a14a434ae16755952274b60143b41c29fa7a923",
+      "original_bytes": 3403
+    },
+    {
+      "path": "examples/rough_bellman_adaptive_audit.py",
+      "original_sha256": "c7b145018da36e7330c1b69ff80dbecbda5cb07ab36f5bd91a2e0d74c9c63c65",
+      "original_bytes": 13703
+    },
+    {
+      "path": "examples/rough_bellman_control.py",
+      "original_sha256": "18a38364672ce1c90811ec90626ea9176441517e49ce2288d05bfc59591e9d1f",
+      "original_bytes": 19415
+    },
+    {
+      "path": "examples/rough_bellman_control_spent.py",
+      "original_sha256": "402ea00832c387d181523f1da42b688083c9c8df93290b606705784cb08a1a17",
+      "original_bytes": 7055
+    },
+    {
+      "path": "examples/rough_bellman_control_spent_aligned.py",
+      "original_sha256": "03d783a1077884c743c1b0ab66c60a2fddf7b324694d0a52caba2503268ad476",
+      "original_bytes": 9434
+    },
+    {
+      "path": "examples/rough_bellman_delta.py",
+      "original_sha256": "a30b610eb97ac89610957f6b27705f861013ed097745a7e1168684a8ffb2f390",
+      "original_bytes": 11478
+    },
+    {
+      "path": "examples/rough_bellman_policy.py",
+      "original_sha256": "945df9588280f8cf67bfcf742d9a244bb22613bfb6a727972df61e541b95cd37",
+      "original_bytes": 18084
+    },
+    {
+      "path": "examples/rough_benchmark.py",
+      "original_sha256": "7b44f0cbf23fb7b42a8b8c96525d54fb23af70ff8c8793154af4b4d8478bb2a5",
+      "original_bytes": 23128
+    },
+    {
+      "path": "examples/rough_benchmark_reproduce.py",
+      "original_sha256": "75924846a5ff141d7660730d2d67b91c063c78a518a603a7902ba017c6369149",
+      "original_bytes": 19339
+    },
+    {
+      "path": "examples/rough_benchmark_serialization_repair.py",
+      "original_sha256": "f9d47a8748b63770a7870c29c624dfa5b458bb972510e9f09f5b8d8f1925e89e",
+      "original_bytes": 17491
+    },
+    {
+      "path": "examples/rough_centering_disagreement_audit.py",
+      "original_sha256": "8838d486087a0e2ce4f49df8c9ba6864e1ea6975ea83fe7971fe38bb546ab8e0",
+      "original_bytes": 6463
+    },
+    {
+      "path": "examples/rough_centering_precision.py",
+      "original_sha256": "f9ecac81a68bfc183b4d972f616b8fe96eada6738f258a50d76067de37e573d3",
+      "original_bytes": 2724
+    },
+    {
+      "path": "examples/rough_control_centering.py",
+      "original_sha256": "d070f2dcebc5b25207f55ee476619b6f9d55ba10c4314696ab7321de18865c89",
+      "original_bytes": 3084
+    },
+    {
+      "path": "examples/rough_dual_tightening.py",
+      "original_sha256": "b26adc113d10b3ea03d9712dc67f64ec75a8911b0e658d3280f13c7e3a84476d",
+      "original_bytes": 3197
+    },
+    {
+      "path": "examples/rough_grid_control.py",
+      "original_sha256": "f5708d52170afa213a5d1ffef85c706c29658ea7bfe0a915af80d309f027e9af",
+      "original_bytes": 15867
+    },
+    {
+      "path": "examples/rough_grid_control_benchmark.py",
+      "original_sha256": "cb257ef6d22887eb1516cc9bf0156f6f0b765738bec25d1e809c3c115f85414f",
+      "original_bytes": 4669
+    },
+    {
+      "path": "examples/rough_grid_control_fast.py",
+      "original_sha256": "bb1a6e3581022e48eb49890d6da0a114860351b828f7daba29b8b49693440f9f",
+      "original_bytes": 16979
+    },
+    {
+      "path": "examples/rough_grid_control_interpolation.py",
+      "original_sha256": "136a9983315ef0d376d1aa7dabdf8ea1fd0819450a008baf793ac856a2bfaefe",
+      "original_bytes": 4606
+    },
+    {
+      "path": "examples/rough_grid_control_validate.py",
+      "original_sha256": "a17a9822e5ef617a61e202cb21ecb50ba5643a26fb2a7e64fdaa9ec9f18fdaee",
+      "original_bytes": 5520
+    },
+    {
+      "path": "examples/rough_larger_policy.py",
+      "original_sha256": "8e5ee0c22de42c3964175cf32638dde22cdbe2371824e628b7652e6591ae8cea",
+      "original_bytes": 11070
+    },
+    {
+      "path": "examples/rough_local_control.py",
+      "original_sha256": "ea8ea1bf3f7e4669b02ab927fd15cdb6ba5ca6da184fb8c1997305b8528be45e",
+      "original_bytes": 14153
+    },
+    {
+      "path": "examples/rough_mc_precision.py",
+      "original_sha256": "801f4ae164fd25643daadf7bd6460b8886745e4819d46ecbac2b47124363ea27",
+      "original_bytes": 16975
+    },
+    {
+      "path": "examples/rough_new_policy_delta.py",
+      "original_sha256": "71641807b54b3185cdc845d127e478ea745adddb7c4b3f0a19942d1ad5c88d78",
+      "original_bytes": 8882
+    },
+    {
+      "path": "examples/rough_policy_comparison.py",
+      "original_sha256": "82d4ce7624ce30278cc1fd385ef6cc99cbc3bac005d455986ba700927256bfbe",
+      "original_bytes": 1238
+    },
+    {
+      "path": "examples/rough_policy_improvement.py",
+      "original_sha256": "6c308db69f01d058a933c42d0e48689c38261bf5205226ea622e4a209ae17891",
+      "original_bytes": 3033
+    },
+    {
+      "path": "examples/rough_policy_reference_probe.py",
+      "original_sha256": "d8d87e7e539fa5a578895998ec87c242fc4b799a8ae599bff79e0afcd14eab18",
+      "original_bytes": 8721
+    },
+    {
+      "path": "examples/rough_price_budget.py",
+      "original_sha256": "3acf1d9a95cfb4c259eeff6811f25e9fcef190877a05a4a3f0425c4c53ad5407",
+      "original_bytes": 10959
+    },
+    {
+      "path": "examples/rough_price_budget_fit.py",
+      "original_sha256": "68fe84a9d2f8970fe41f5a7e0cf45467a6acf71397ce194b94f97bf317e1400a",
+      "original_bytes": 7324
+    },
+    {
+      "path": "examples/rough_price_budget_spent.py",
+      "original_sha256": "4e163a18d2638c6d26e4dd62128a61ba6afcbefad5af1d82d105ec155645e306",
+      "original_bytes": 4739
+    },
+    {
+      "path": "examples/rough_shared_delta.py",
+      "original_sha256": "695ea7ac736eda6406fcfaaee4ea8d95823eb7c32c7d731f255e2f9874e480d0",
+      "original_bytes": 15180
+    },
+    {
+      "path": "examples/rough_stock_delta.py",
+      "original_sha256": "1285ffe7dcd826eab5fdfdd6b2c8e7e35ea22a204dcaa361e5cf35569af921e0",
+      "original_bytes": 7822
+    },
+    {
+      "path": "examples/rough_stock_delta_heston_followup.py",
+      "original_sha256": "232058cf9be6eb431ebe3e4628a86145c35a71b66978f197c2376024b9ecfbbd",
+      "original_bytes": 6475
+    },
+    {
+      "path": "examples/rough_stock_delta_references.py",
+      "original_sha256": "d89a1016594b08a9997bf74fb4ff73964eb28ba6db337f16aa13bf377023af19",
+      "original_bytes": 8682
+    },
+    {
+      "path": "examples/rough_stock_delta_time_refinement.py",
+      "original_sha256": "5f444b2d93fa1a08d983615f442c3037455f9a61905dc9feb7a5107349e1b945",
+      "original_bytes": 4054
+    },
+    {
+      "path": "examples/rough_stopping_attribution.py",
+      "original_sha256": "0f7927aebbd2279e2a2d518efc2664f064e2f4df351888d549ed362b95c47229",
+      "original_bytes": 3224
+    },
+    {
+      "path": "examples/rough_stopping_block_probe.py",
+      "original_sha256": "022e899a87a5c77c8d0a4da69765328c2bb4733e492fbcc0028153d97554e521",
+      "original_bytes": 6366
+    },
+    {
+      "path": "examples/rough_stopping_refresh.py",
+      "original_sha256": "b4cd5606ea8f23866c8265deb3ce8946778a2d71464be7f143657d06357bc500",
+      "original_bytes": 9451
+    },
+    {
+      "path": "examples/rough_tail_attribution.py",
+      "original_sha256": "5fb3efe77efd0287d9fc1f1dee89300760617fec0367849544cbcf2657211524",
+      "original_bytes": 19609
+    },
+    {
+      "path": "examples/rough_tail_capacity.py",
+      "original_sha256": "73143e40194dbd86accebd844c281164c023e9b44b889b1a7a452f50d0e56e4d",
+      "original_bytes": 5645
+    },
+    {
+      "path": "examples/rough_tail_pilot.py",
+      "original_sha256": "69b2a3b8409146b632ba428777d67bf489d7133f661f9a303874049f1db91f22",
+      "original_bytes": 6073
+    },
+    {
+      "path": "examples/rough_tail_spent_policy.py",
+      "original_sha256": "3a457969d6c36ee9f644820e747bc7198292e59fb4c236a18d82216386c88f92",
+      "original_bytes": 8471
+    },
+    {
+      "path": "examples/rough_tail_state_replay.py",
+      "original_sha256": "00d4bedb18e5327f2b345943cb94711c377617a9506a629029bcf99b5e5dfff4",
+      "original_bytes": 7209
+    },
+    {
+      "path": "examples/rough_tail_validate.py",
+      "original_sha256": "b80f022a1cd556c23c7088b3fe50f6761b5a8d9ce7dbb7424e52f20feef4deaa",
+      "original_bytes": 8696
+    },
+    {
+      "path": "examples/rough_time_precision.py",
+      "original_sha256": "5ed4a44fcb74c4bf373408669a3e8802e4334aa0083201919ca70ff0e3bdcd1f",
+      "original_bytes": 11914
+    },
+    {
+      "path": "examples/spy_rough_calls.py",
+      "original_sha256": "187a8c7c54f2dfd4664565c09e7f6d0d08f1b9dbdc923bd9c3ed343741e70790",
+      "original_bytes": 165
+    },
+    {
+      "path": "examples/spy_variance_level_diagnostic.py",
+      "original_sha256": "033d7d326c42992a505dc40fb7525b9fc42fe9824eafcb9fac1a6241ae7903f6",
+      "original_bytes": 1279
+    },
+    {
+      "path": "scripts/acquire_spy_call_pilot.py",
+      "original_sha256": "542efb90c68d028851d58716a2c7a1d6706fcf37a93472a6534a4671e2baec05",
+      "original_bytes": 1648
+    },
+    {
+      "path": "scripts/audit_policy_comparison_results.py",
+      "original_sha256": "3f3da30960358eec1dc4bb06725fde6bfea0217ed4df5106405f5cc1b7fdffd4",
+      "original_bytes": 30186
+    },
+    {
+      "path": "scripts/build_notebook_index.py",
+      "original_sha256": "345e1f2ccef569f9049a55c1bf40ff29033d7d5a6fca16c5b14acce9a9169c06",
+      "original_bytes": 8418
+    },
+    {
+      "path": "scripts/build_pricing_first_stage_release.py",
+      "original_sha256": "a9cce812256f26ef802bf6c297664a44e9761b1b8c44a6c28340fc5c75d6e95e",
+      "original_bytes": 25563
+    },
+    {
+      "path": "scripts/lint_notebooks.py",
+      "original_sha256": "649cb7c33a0ba9d7605922a5d12153c799d078cb521717589482be800f6a15e8",
+      "original_bytes": 26310
+    },
+    {
+      "path": "scripts/prepare_spy_dataset.py",
+      "original_sha256": "a91643fe0cd65a7d9e3993b335dc21e493d114ef45b8dfc5d070c6f8669cd4c1",
+      "original_bytes": 390
+    },
+    {
+      "path": "scripts/preserve_pricing_first_stage.py",
+      "original_sha256": "bcf7a281c63302a13fda89d755c29ac371f7d3e4c2a725aef51b1b990f4fad97",
+      "original_bytes": 7288
+    },
+    {
+      "path": "scripts/preserve_pricing_policy_baseline.py",
+      "original_sha256": "65781e1aa4a5b8260fc74ae1c586ebae5885c531d1422cc767fe13a8e4907f8f",
+      "original_bytes": 10091
+    },
+    {
+      "path": "scripts/run_legacy_notebooks.sh",
+      "original_sha256": "e5090d001b0f793b0757dc2fa1de9d4babb5140461210a639570255133b63d29",
+      "original_bytes": 6849
+    },
+    {
+      "path": "scripts/run_notebooks.py",
+      "original_sha256": "3840b79a6c3db673d4b1e286ebf80b21716f16c6152fafd34eb8ccfa1d381e46",
+      "original_bytes": 4412
+    },
+    {
+      "path": "scripts/run_notebooks.sh",
+      "original_sha256": "a824c41b859b7c9ba5e3e648b5a369b44a3d04d1b062bb2d29f1fe6bcd6feece",
+      "original_bytes": 537
+    },
+    {
+      "path": "scripts/verify_pricing_archive.py",
+      "original_sha256": "75dbf0c297e3e93160e6a1bf3d54874ee4e843a6a55254ce3197dce4ac7501b2",
+      "original_bytes": 1927
+    },
+    {
+      "path": "scripts/verify_pricing_first_stage_refresh.py",
+      "original_sha256": "3addf4c5609578c60192a9daeec8e2fa8bd68a8808f8ff36e51ea05039bd288f",
+      "original_bytes": 3491
+    }
+  ],
+  "notes": [
+    "Original working trees and immutable reports preserved separately.",
+    "Published files may have explicit portability or integration changes; original fingerprints are provenance, not an identity claim for modified files.",
+    "Raw market data, credentials, sealed simulation payloads and personal notes are excluded."
+  ]
+}

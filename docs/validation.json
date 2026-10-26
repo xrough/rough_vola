@@ -1,0 +1,75 @@
+{
+  "edition": "public-research-consolidation",
+  "date": "2026-10-26",
+  "python": "3.12.0",
+  "local_tests": {
+    "broad_run_passed": 3862,
+    "broad_run_known_static_notebook_failure": 1,
+    "static_failure_corrected": true,
+    "final_targeted_rerun_passed": 11,
+    "unique_enabled_tests_passed_across_runs": 3863,
+    "archive_report_skips": 57,
+    "sandbox_kernel_port_skips": 3,
+    "new_numerical_skips": 0,
+    "note": "The broad run encountered notebook magic before its ordinary-Python setup correction. The final frozen notebook/tooling/packaging tests all passed in a targeted rerun; no third broad run is claimed."
+  },
+  "notebooks": {
+    "version": "public_notebooks_v1",
+    "records": [
+      {
+        "notebook": "01_pricing_and_exercise.ipynb",
+        "elapsed_seconds": 34.377,
+        "error_outputs": 0,
+        "source_bindings_pass": true,
+        "kernel_pinned_to_selected_interpreter": true
+      },
+      {
+        "notebook": "02_synthetic_calibration.ipynb",
+        "elapsed_seconds": 24.187,
+        "error_outputs": 0,
+        "source_bindings_pass": true,
+        "kernel_pinned_to_selected_interpreter": true
+      },
+      {
+        "notebook": "03_spy_pilot.ipynb",
+        "elapsed_seconds": 17.369,
+        "error_outputs": 0,
+        "source_bindings_pass": true,
+        "kernel_pinned_to_selected_interpreter": true
+      }
+    ],
+    "private_data_included": false,
+    "historical_campaigns_recomputed": false
+  },
+  "independent_publication_audit": {
+    "passed": true,
+    "canonical_pricing_python_files_identical_to_original": 34,
+    "report_manifest_files_verified": 19,
+    "source_bindings_per_notebook": 35,
+    "raw_market_payloads_distributed": false,
+    "personal_absolute_paths_found": false,
+    "cpp_sources_distributed": false
+  },
+  "public_report_manifest_sha256": "a57fca4d07c43bf4201c7887e76aae94657021bc2dc831f38010e6e9d5a25366",
+  "isolated_wheel_install_smoke_passed": true,
+  "standalone_synthetic_example_models_passed": [
+    "bs",
+    "heston",
+    "rough_heston_controlled_v0"
+  ],
+  "tested_versions": {
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "pandas": "3.0.2",
+    "matplotlib": "3.10.8",
+    "scikit-learn": "1.9.1",
+    "statsmodels": "0.15.0",
+    "pyarrow": "23.0.1",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "nbconvert": "7.17.2",
+    "ipykernel": "7.4.0",
+    "pytest": "9.1.1"
+  },
+  "scientific_scope": "Public-source validation and portable demonstrations. Historical campaign findings retain their original failed numerical checks and data limitations; publication does not promote pricing, calibration or hedging readiness."
+}

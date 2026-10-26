@@ -1,0 +1,51 @@
+{
+  "version": "public_report_v1",
+  "synthetic_demos_executed": true,
+  "market_data_recomputed": false,
+  "historical_campaigns_recomputed": false,
+  "full_private_provenance_distributed": false,
+  "notebooks": [
+    {
+      "notebook": "01_pricing_and_exercise.ipynb",
+      "code_cells": 6,
+      "error_outputs": 0,
+      "embedded_figures": 2,
+      "elapsed_seconds": 34.349
+    },
+    {
+      "notebook": "02_synthetic_calibration.ipynb",
+      "code_cells": 5,
+      "error_outputs": 0,
+      "embedded_figures": 1,
+      "elapsed_seconds": 24.183
+    },
+    {
+      "notebook": "03_spy_pilot.ipynb",
+      "code_cells": 4,
+      "error_outputs": 0,
+      "embedded_figures": 1,
+      "elapsed_seconds": 17.366
+    }
+  ],
+  "files": {
+    "notebooks/01_pricing_and_exercise.ipynb": "d6e45ff85c7748f571e5af139edbadae1bbedc4a4889ffab4dd325c728c5407a",
+    "notebooks/02_synthetic_calibration.ipynb": "a7c4cdd620e7a9fd5be499408e25b39b59b36925d2bf11ea905b4c37b379f2e0",
+    "notebooks/03_spy_pilot.ipynb": "63b007201f85ea71623afe0b064be54693e4a3e54092eb6941d018629567c9d0",
+    "reports/01_pricing_and_exercise.html": "90b9b00edab3da23e019ebc63c246cf3a108f85ed27736c2b23a7f8b8ebc1ae8",
+    "reports/02_synthetic_calibration.html": "5f0bd6348912c6b5bbeacaa3e8cf0860fc4241712a3ab825897d4bb87647556b",
+    "reports/03_spy_pilot.html": "dcf0a9378e7cd1194f750aae6edd1475f5f0dfe9ad6e66849c8adf7cd96f7795",
+    "reports/aggregate_findings/manifest.json": "89a147cd515fd651b3e2b79f555814aeb14624f34a81d6811c8db11bf0d46c02",
+    "reports/aggregate_findings/pilot_fit_attempts.csv": "06a66e7fdd528f7a255a5508b64c083cb32da1dd3dd8f694da1722aa025f05de",
+    "reports/aggregate_findings/pilot_refinement_outcomes.csv": "9471aa8eee0a16f937f197f083cc4afd39efc2e12d530a55380a233f73547cde",
+    "reports/aggregate_findings/pilot_refinement_summary.csv": "e7857b1a26d371ec92bcc13a692c297f64f9d608d965f8d97bee2226d2d01537",
+    "reports/aggregate_findings/synthetic_policy_gains.csv": "7499f940053102fde3bb57bedb1fb5fe260ab594e9cecff36995badc096a4e53",
+    "reports/aggregate_findings/synthetic_policy_values.csv": "e860a6cc8880392e9c480a534d0b3f51ff78c075a712089429d20bf4c3809756",
+    "reports/index.html": "13d5f77fdf21beb085a2b9c53a3b06877d6a55351624afa4896168906e82d95b",
+    "reports/research_findings.md": "9c0773675d849c52f0bb2600231cad374fd19fa69b844074198cc9a72875cc48",
+    "reports/spy_pilot.md": "c6bd2f9b6b329a5be9820a96194a5b988f2286213c3ff87eb324ee58f2acafa1",
+    "scripts/build_reports.py": "c838f16116183343564b9c1b57d4032edcb6f407549af584d0ce45197abad521",
+    "scripts/export_public_findings.py": "6c368d3383b447d6863234c48c0c23b07d48fa622a090018d86d9f1cceda4289",
+    "scripts/public_notebook_support.py": "f681b59c9e19b677e40677badfe7f84028ef13dddf8c2de2daf0790ce4b27a75",
+    "scripts/run_notebooks.py": "c8d42a20defe570e332ba6af96803236620e2399a1ebe50c43535918df02eaed"
+  }
+}
